@@ -1,5 +1,7 @@
 img {
     width:500px;
+    position:relative;
+    left: 300px;
     
 }
 nav{
@@ -9,6 +11,10 @@ nav{
     width: 731px;
 }
 
+.recipes{
+   position: relative;
+   left: 300px; 
+}
 .popRecipe{
     width:253px;
     height:203px;

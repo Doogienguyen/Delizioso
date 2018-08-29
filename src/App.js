@@ -37,10 +37,12 @@ state= {
         />
         <HeaderNav
           navBar={this.headerNav} />
-        Recipes of the day:
+        
+        <div className="col-md-6">
         <div className="recipes">
-          <div className="col-md-6">
+        <p>Recipes of the day:</p>
           <div className="row">
+          
             <PopRecipe
               recipe={this.recipe} />
             <UserRecipe
