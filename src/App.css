@@ -1,0 +1,39 @@
+img {
+    width:500px;
+    
+}
+nav{
+    margin: 10px auto;
+}
+.header{
+    width: 731px;
+}
+
+.popRecipe{
+    width:253px;
+    height:203px;
+    background-image: url("https://www.eatwell101.com/wp-content/uploads/2017/05/Cilantro-Lime-Shrimp-with-Zucchini-Noodles.jpg");
+    background-size:cover;
+}
+.userRecipe{
+    width: 253px;
+    height: 203px;
+    margin-left: 30px;
+    background-image: url('https://tornadoughalli.com/wp-content/uploads/2018/02/Lemon-Chicken-Pasta-2.jpg');
+    background-size: cover;
+}
+.healthyRecipe{
+    width:253px;
+    height:203px;
+    margin-top:30px;
+    background-image: url('https://www.foodiecrush.com/wp-content/uploads/2017/09/Pesto-Pasta-Recipe-foodiecrush.com-002-768x1151.jpg');
+    background-size:cover;
+}
+.dessertDay {
+    width:253px;
+    height:203px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-image: url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F200911-xl-vanilla-and-cider-panna-cottas-with-spiced-ginger-cookies.jpg%3Fitok%3DBdtotzYz&w=800&q=85');
+    background-size:cover;
+}
