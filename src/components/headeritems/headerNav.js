@@ -1,7 +1,31 @@
 import React, { Component } from 'react';
-
+import { HOME, USERPROFILE } from '../../constants';
 class HeaderNav extends Component {
+    state = {
+        userName: "",
+        password: ""
+    }
 
+    onUserNameChange = e => {
+        this.setState({
+            userName: e.target.value
+        })
+    }
+    onPasswordChange = e => {
+        this.setState({
+            password: e.target.value
+        })
+    }
+    buttonClicked = e => {
+        e.preventDefault();
+        this.props.login(this.state)
+        this.props.changePath(USERPROFILE);
+        this.setState({
+            userName: "",
+            password: "",
+
+        });
+    }
 
     render() {
         return (
@@ -13,17 +37,17 @@ class HeaderNav extends Component {
                             Login <span className="caret"></span>
                         </button>
                         <ul className="dropdown-menu">
-                            
-                                <div className="form-group">
-                                    <input type="email" className="form-control" id="inputEmail1" placeholder="Email" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="password" className="form-control" id="inputPassword1" placeholder="Password" />
-                                </div>
-                                <div className="form-group">
-                                    <button type="submit" className="btn btn-default" onClick={() => console.log('click')} >Sign in</button>
-                                </div>
-                            
+
+                            <div className="form-group">
+                                <input type="email" className="form-control" value={this.props.userName} onChange={this.onUserNameChange} placeholder="User Name" />
+                            </div>
+                            <div className="form-group">
+                                <input type="password" className="form-control" value={this.props.password} onChange={this.onPasswordChange} placeholder="Password" />
+                            </div>
+                            <div className="form-group">
+                                <button type="submit" className="btn btn-default" onClick={this.buttonClicked} >Sign in</button>
+                            </div>
+
                             <div className="dropdown-divider"></div>
                             <a className="dropdown-item" href="#">New around here? Sign up</a>
                             <a className="dropdown-item" href="#">Forgot password?</a>

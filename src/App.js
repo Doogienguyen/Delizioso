@@ -1,55 +1,112 @@
 import React, { Component } from 'react';
-import LogIn from './components/logIn';
-import UserRecipe from './components/recipeblocks/userRecipe';
+import logIn from './components/logIn';
 import './App.css';
 import Header from './components/headeritems/header';
-import PopRecipe from './components/recipeblocks/popRecipe';
-import HealthyRecipe from './components/recipeblocks/healthyRecipe';
-import DessertDay from './components/recipeblocks/dessertDay';
 import HeaderNav from './components/headeritems/headerNav';
+import userProfile from './components/userProfile';
+import HomePage from './components/homePage';
+
 import UserProfile from './components/userProfile';
-import HomePage from './components/homePage'
-import RecipePage from './components/recipes/limeShrimp'
+import {HOME,USERPROFILE} from './constants';
+
+// const HOME = 'HOME';
+// const USERPROFILE ="USERPROFILE";
+// const LOGIN = "LOGIN";
 
 class App extends Component {
 
-state= {
-  users: [],
-}
+  state = {
+    users: [{ 
+      userName: 'Tram', 
+      password: 'food' 
+    }],
+    path: HOME,
+    goodLogIn: false
+    
+  }
+
+  
+
+  login = user => {
+    for (let i = 0; i < this.state.users.length; i++) {
+      if (user.username === this.state.users[i].username && user.password === this.state.users[i].password) {
+        this.setState({ goodLogin: true });
+      } else {
+        this.setState({ goodLogin: false });
+      }
+    }
+  }
+  changePath = x => {
+    this.setState({ path: x })
+  }
+
+  renderPath = path => {
+    switch (path) {
+      case HOME:
+        return (
+        <HomePage
+          changePath={this.changePath}
+          login ={this.login}
+          username={this.state.userName}
+          password={this.state.password}
+          />
+      
+      )
+      case USERPROFILE: 
+        return (
+          <UserProfile
+            changePath={this.changePath}
+            username={this.state.userName}
+            goodLogin={this.state.goodLogin}/>
+        )
+        
+    }
+  }
+
+
 
   render() {
     return (
       <div className="container-fluid">
-        <RecipePage />
-        {/* <Header
-          header={this.header}
-        />
+      
+         
         <HeaderNav
-          navBar={this.headerNav} />
+        changePath={this.changePath}
+          navBar={this.headerNav}
+          isLoggedIn={this.state.isLoggedIn}
+          userName={this.state.userName}
+          password={this.state.password}
+          onUserName={this.onUserNameChange}
+          onPassword={this.onPasswordChange}
+          login={this.login}
+        />
+        
+          {this.renderPath(this.state.path)} 
         
         <div className="col-md-6">
-      
-        <div className="recipes">
-        <p>Recipes of the day:</p>
-       
-          <div className="row">
+          <div className="recipes">
+            <p>Recipes of the day:</p>
+            <div className="row">
 
-            <PopRecipe
-              recipe={this.recipe} />
-            <UserRecipe
-              recipe={this.recipe} />
+
+              {/* <PopRecipe
+                recipe={this.recipe} />
+              <UserRecipe
+                recipe={this.recipe} />
+            </div>
+            <div className="row">
+              <HealthyRecipe
+                recipe={this.recipe} />
+              <DessertDay
+                recipe={this.recipe} /> */}
+            </div>
           </div>
-          <div className="row">
-            <HealthyRecipe
-              recipe={this.recipe} />
-            <DessertDay 
-              recipe={this.recipe} />
-          </div>
-          </div>
-        </div> */}
+        </div> 
+
+
       </div>
     );
   }
+  
 }
-
 export default App;

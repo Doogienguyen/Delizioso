@@ -1,12 +1,22 @@
 img {
     width:500px;
-    position:relative;
+    position: relative;
     left: 300px;
     
 }
-
+nav{
+    margin: 10px auto;
+    width:1000px;
+}
+.container-fluid {
+    padding-left: 0px;
+    padding-right:0px;
+}
 .header{
-    background-color: lightyellow;
+    
+    border-bottom: 1px solid lightskyblue;
+    background-color: lightskyblue;
+   
 }
 
 .recipes{
