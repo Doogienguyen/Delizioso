@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import logIn from './components/logIn';
+// import dessertDay from './components/dessertDay';
+// import healtyRecipe from './components/healthyRecipe';
+// import popRecipe from './components/popRecipe';
+// import userRecipe from './components/userRecipe';
 import './App.css';
 import Header from './components/headeritems/header';
 import HeaderNav from './components/headeritems/headerNav';
@@ -16,10 +20,10 @@ import {HOME,USERPROFILE} from './constants';
 class App extends Component {
 
   state = {
-    users: [{ 
+    users: { 
       userName: 'Tram', 
       password: 'food' 
-    }],
+    },
     path: HOME,
     goodLogIn: false
     
@@ -28,12 +32,11 @@ class App extends Component {
   
 
   login = user => {
-    for (let i = 0; i < this.state.users.length; i++) {
-      if (user.username === this.state.users[i].username && user.password === this.state.users[i].password) {
-        this.setState({ goodLogin: true });
+      if (user.username === this.state.users.username && user.password === this.state.users.password) {
+        this.setState({ goodLogIn: true });
       } else {
-        this.setState({ goodLogin: false });
-      }
+        this.setState({ goodLogIn: false });
+      
     }
   }
   changePath = x => {
@@ -56,8 +59,8 @@ class App extends Component {
         return (
           <UserProfile
             changePath={this.changePath}
-            username={this.state.userName}
-            goodLogin={this.state.goodLogin}/>
+            userName={this.state.users.userName}
+            goodLogIn={this.state.goodLogIn}/>
         )
         
     }
@@ -68,12 +71,12 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid">
-      
+      <Header />
          
         <HeaderNav
-        changePath={this.changePath}
+          changePath={this.changePath}
           navBar={this.headerNav}
-          isLoggedIn={this.state.isLoggedIn}
+          goodLogIn={this.state.goodLogIn}
           userName={this.state.userName}
           password={this.state.password}
           onUserName={this.onUserNameChange}

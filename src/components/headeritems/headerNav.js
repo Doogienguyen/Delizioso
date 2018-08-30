@@ -26,6 +26,9 @@ class HeaderNav extends Component {
 
         });
     }
+  returnHome = e => {
+      this.props.changePath(HOME);
+  }
 
     render() {
         return (
@@ -57,10 +60,11 @@ class HeaderNav extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                                <button className="btn btn-link" onClick={() => { this.props.changePath(HOME)}} >Home</button>
+                                
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Sumbit a Recipe</a>
+                            <button className="btn btn-link" >Submit a Recipe</button>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
