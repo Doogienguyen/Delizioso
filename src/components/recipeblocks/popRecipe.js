@@ -6,7 +6,7 @@ class PopRecipe extends Component{
     return (
         <div className="popRecipe">
             
-                <div>popular</div>
+                <div>Popular</div>
                 
 
         

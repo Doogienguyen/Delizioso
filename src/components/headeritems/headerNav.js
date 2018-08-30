@@ -87,7 +87,9 @@ class HeaderNav extends Component {
                         </form>
                     </div>
                 </nav>
+                
             </div>
+            
         )
     }
 

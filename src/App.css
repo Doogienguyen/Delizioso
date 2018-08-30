@@ -1,24 +1,25 @@
-img {
-    width:500px;
-    position: relative;
-    left: 300px;
-    
-}
 nav{
-    margin: 10px auto;
-    width:1000px;
+    margin: 0px 0px 10px 0px;
+    
 }
 .container-fluid {
     padding-left: 0px;
     padding-right:0px;
 }
 .header{
-    
-    border-bottom: 1px solid lightskyblue;
-    background-color: lightskyblue;
+        background-color: lightyellow;
    
 }
 
+#ingredients-box{
+    width: 500px;
+}
+
+#img-logo {
+    width:500px;
+    position: relative;
+    left: 3500px;
+}
 .recipes{
    position: relative;
    left: 300px; 
@@ -53,6 +54,18 @@ nav{
 }
 
 /* users profile */
+.recipe-picture {
+    height: 540px;
+    width: 540px;
+    
+}
+
+.ingredients-header {
+    color: #86C1B7;
+}
+
+/* User Profile */
+
 body {
     background: #F1F3FA;
   }
@@ -162,3 +175,5 @@ body {
     background: #fff;
     min-height: 460px;
   }
+
+  /* End */

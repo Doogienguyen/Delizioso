@@ -13,6 +13,11 @@ import HomePage from './components/homePage';
 import UserProfile from './components/userProfile';
 import {HOME,USERPROFILE} from './constants';
 
+import LimeShrimp from './components/recipes/limeShrimp';
+import PestoPasta from './components/recipes/pestoPasta';
+import Lasagna from './components/recipes/lasagna'
+import ChickenParm from './components/recipes/chickenParm'
+
 // const HOME = 'HOME';
 // const USERPROFILE ="USERPROFILE";
 // const LOGIN = "LOGIN";
@@ -71,7 +76,13 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid">
-      <Header />
+
+      <LimeShrimp/>
+      <PestoPasta/>
+      <Lasagna/>
+      <ChickenParm/>
+      
+      <Header/>
          
         <HeaderNav
           changePath={this.changePath}

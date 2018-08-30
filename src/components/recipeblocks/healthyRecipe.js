@@ -6,7 +6,7 @@ class HealthyRecipe extends Component{
     return (
         <div className="healthyRecipe">
             
-                <div>Healthy Dishes</div>
+                <div>Low Calorie</div>
                 
 
         
