@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-// import {HOME, USERPROFILE } from '../constants'
+import {HOME, USERPROFILE } from '../constants'
 
 class UserProfile extends Component {
-<<<<<<< HEAD
 render () {
     return(
 <div>
@@ -21,7 +20,7 @@ render () {
 						Person Name 
 					</div>
 					<div class="profile-usertitle-job">
-						Developer
+						Chef
 					</div>
 				</div>
 				{/* <!-- END SIDEBAR USER TITLE -->
@@ -66,25 +65,11 @@ render () {
 		</div>
 	</div>
 </div>
-<center>
-<strong>Powered by <a href="http://j.mp/metronictheme" target="_blank">KeenThemes</a></strong>
-</center>
 <br/>
 <br/>
 </div>
 
 
-=======
-    render(){
-        return(
-            <div>
-                {
-            this.props.goodLogin && <h1>hello {this.props.username}</h1>
-                }
-            </div>
-        )
-    }
->>>>>>> 16b26ab70515e431af6f02d821749ead526de047
 
 
     )

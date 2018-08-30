@@ -2,11 +2,6 @@ import React, {Component} from 'react';
 import { HOME, USERPROFILE } from '../constants'
 
 
-<<<<<<< HEAD
-class Forms extends Component {
-   
-    
-=======
 class LogIn extends Component {
 state={
     userName:"",
@@ -38,7 +33,6 @@ buttonClicked = e => {
 
 
 
->>>>>>> 16b26ab70515e431af6f02d821749ead526de047
 }
 
 export default LogIn;
