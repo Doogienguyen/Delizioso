@@ -6,7 +6,7 @@ class UserRecipe extends Component{
     return (
         <div className="userRecipe">
             
-                <div>user submitted</div>
+                <div>User Submitted</div>
                 
 
         

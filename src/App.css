@@ -4,11 +4,9 @@ img {
     left: 300px;
     
 }
-nav{
-    margin: 10px auto;
-}
+
 .header{
-    width: 731px;
+    background-color: lightyellow;
 }
 
 .recipes{
@@ -43,3 +41,17 @@ nav{
     background-image: url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F200911-xl-vanilla-and-cider-panna-cottas-with-spiced-ginger-cookies.jpg%3Fitok%3DBdtotzYz&w=800&q=85');
     background-size:cover;
 }
+
+.recipe-picture {
+    height: 450px;
+    width: 450px;
+    /* transform: rotate(90deg); */
+    margin-right: 300px;
+}
+
+.ingredients-header {
+    color: #86C1B7;
+}
+
+
+/* https://bootsnipp.com/snippets/featured/user-profile-sidebar  */

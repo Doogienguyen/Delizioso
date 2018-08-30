@@ -1,67 +1,67 @@
 import React, { Component } from 'react';
 
 class HeaderNav extends Component {
+
+
     render() {
         return (
             <div>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-
-                    <div class="dropdown-menu">
-                        <form class="px-4 py-3">
-                            <div class="form-group">
-                                <label for="exampleDropdownFormEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" />
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleDropdownFormPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" />
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="dropdownCheck" />
-                                <label class="form-check-label" for="dropdownCheck">
-                                    Remember me
-      </label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Sign in</button>
-                        </form>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">New around here? Sign up</a>
-                        <a class="dropdown-item" href="#">Forgot password?</a>
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                    <div className="btn-group">
+                        <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            Login <span className="caret"></span>
+                        </button>
+                        <ul className="dropdown-menu">
+                            
+                                <div className="form-group">
+                                    <input type="email" className="form-control" id="inputEmail1" placeholder="Email" />
+                                </div>
+                                <div className="form-group">
+                                    <input type="password" className="form-control" id="inputPassword1" placeholder="Password" />
+                                </div>
+                                <div className="form-group">
+                                    <button type="submit" className="btn btn-default" onClick={() => console.log('click')} >Sign in</button>
+                                </div>
+                            
+                            <div className="dropdown-divider"></div>
+                            <a className="dropdown-item" href="#">New around here? Sign up</a>
+                            <a className="dropdown-item" href="#">Forgot password?</a>
+                        </ul>
                     </div>
 
-
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sumbit a Recipe</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Sumbit a Recipe</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Browse Recipes
                             </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Low Calorie</a>
-                                    <a class="dropdown-item" href="#">Vegetarian</a>
-                                    <a class="dropdown-item" href="#">Pastas</a>
-                                    <a class="dropdown-item" href="#">Chicken</a>
-                                    <a class="dropdown-item" href="#">Desserts</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a className="dropdown-item" href="#">Low Calorie</a>
+                                    <a className="dropdown-item" href="#">Vegetarian</a>
+                                    <a className="dropdown-item" href="#">Pastas</a>
+                                    <a className="dropdown-item" href="#">Chicken</a>
+                                    <a className="dropdown-item" href="#">Desserts</a>
+                                    <div className="dropdown-divider"></div>
+                                    <a className="dropdown-item" href="#">Something else here</a>
                                 </div>
                             </li>
                         </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <form className="form-inline my-2 my-lg-0">
+                            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
                     </div>
                 </nav>
+                
             </div>
+            
         )
     }
 

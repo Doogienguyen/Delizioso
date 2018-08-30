@@ -8,32 +8,20 @@ import HealthyRecipe from './components/recipeblocks/healthyRecipe';
 import DessertDay from './components/recipeblocks/dessertDay';
 import HeaderNav from './components/headeritems/headerNav';
 import UserProfile from './components/userProfile';
+import HomePage from './components/homePage'
+import RecipePage from './components/recipes/limeShrimp'
 
 class App extends Component {
 
 state= {
-  users: []
+  users: [],
 }
-
-// addToUsers= users => {
-//   let NewUsers=[...this.state.users, users];
-//   this.setState({
-//     users: newUsers
-//   })
-// }
-
-
-
-
-
-
-
 
   render() {
     return (
-      <div className="container">
-
-        <Header
+      <div className="container-fluid">
+        <RecipePage />
+        {/* <Header
           header={this.header}
         />
         <HeaderNav
@@ -58,7 +46,7 @@ state= {
               recipe={this.recipe} />
           </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
