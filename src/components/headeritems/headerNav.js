@@ -13,10 +13,13 @@ class HeaderNav extends Component {
                         Browse recipes
                     </navItem>
                     <navItem>
+                        <input type="text" placeholder="search a recipe"/>
+                    </navItem>
+                    <navItem>
 
                         <div className="btn-group float-right">
                             <button type="button" className="btn btn-info dropdown-toggle " data-toggle="dropdown" >
-                                Action <span className="caret"></span>
+                                Log In <span className="caret"></span>
                             </button>
                             <ul className="dropdown-menu">
                                 <form>
@@ -27,7 +30,7 @@ class HeaderNav extends Component {
                                         <input type="password" className="form-control" id="inputPassword1" placeholder="Password" />
                                     </div>
                                     <div className="form-group">
-                                        <button type="submit" className="btn btn-default">Sign in</button>
+                                        <button type="submit" className="btn btn-default" >Sign in</button>
                                     </div>
                                 </form>
                                 <div class="dropdown-divider"></div>
