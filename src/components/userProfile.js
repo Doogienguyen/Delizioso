@@ -1,17 +1,16 @@
 import React, {Component} from 'react';
+// import {HOME, USERPROFILE } from '../constants'
 
 class UserProfile extends Component {
-<<<<<<< HEAD
-    // render(){
-    //     return(
-
-    
-    //     )
-    // }
-=======
-
-
->>>>>>> f98841998d3d7bf6a10cad85a233996a6a6e37bb
+    render(){
+        return(
+            <div>
+                {
+            this.props.goodLogin && <h1>hello {this.props.username}</h1>
+                }
+            </div>
+        )
+    }
 
 
 }

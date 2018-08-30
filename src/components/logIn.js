@@ -1,9 +1,32 @@
 import React, {Component} from 'react';
+import { HOME, USERPROFILE } from '../constants'
 
 
-class Forms extends Component {
-
-
+class LogIn extends Component {
+state={
+    userName:"",
+    password: ""
+}
+onUserNameChange = e => {
+    this.setState({
+        userName: e.target.value
+    })
+}
+onPasswordChange = e => {
+    this.setState({
+        Password: e.target.value
+    })
+}
+buttonClicked = e => {
+    e.preventDefault();
+    this.props.login(this.state)
+    this.props.changePath(USERPROFILE);
+    this.setState({
+        userName: "",
+        password: "",
+        
+    });
+}
 
 
 
@@ -12,4 +35,4 @@ class Forms extends Component {
 
 }
 
-export default Forms;
+export default LogIn;

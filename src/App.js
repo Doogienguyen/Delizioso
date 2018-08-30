@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import logIn from './components/logIn';
-import UserRecipe from './components/recipeblocks/userRecipe';
 import './App.css';
 import Header from './components/headeritems/header';
-import PopRecipe from './components/recipeblocks/popRecipe';
-import HealthyRecipe from './components/recipeblocks/healthyRecipe';
-import DessertDay from './components/recipeblocks/dessertDay';
 import HeaderNav from './components/headeritems/headerNav';
 import userProfile from './components/userProfile';
-import LogIn from './components/logIn';
+import HomePage from './components/homePage';
 
-const HOME = 'HOME';
+import UserProfile from './components/userProfile';
+import {HOME,USERPROFILE} from './constants';
+
+// const HOME = 'HOME';
 // const USERPROFILE ="USERPROFILE";
+// const LOGIN = "LOGIN";
 
 class App extends Component {
 
@@ -25,15 +25,11 @@ class App extends Component {
     
   }
 
-  // logIn = user => {
-  //   this.setState({
-  //     isLoggedIn: this.logInCheck(user)
-  //   })
-  // }
+  
 
-  logIn = user => {
+  login = user => {
     for (let i = 0; i < this.state.users.length; i++) {
-      if (user.username === this.state.user.username && user.password === this.state.user.password) {
+      if (user.username === this.state.users[i].username && user.password === this.state.users[i].password) {
         this.setState({ goodLogin: true });
       } else {
         this.setState({ goodLogin: false });
@@ -48,14 +44,22 @@ class App extends Component {
     switch (path) {
       case HOME:
         return (
-        <HOME
-          login ={this.login}/>
+        <HomePage
+          changePath={this.changePath}
+          login ={this.login}
+          username={this.state.userName}
+          password={this.state.password}
+          />
       
       )
-      // case USERPROFILE: 
-      //   return (
-      //     <USERPROFILE />
-      //   )
+      case USERPROFILE: 
+        return (
+          <UserProfile
+            changePath={this.changePath}
+            username={this.state.userName}
+            goodLogin={this.state.goodLogin}/>
+        )
+        
     }
   }
 
@@ -64,39 +68,40 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid">
-      {/* <Home 
-        login= {this.props.login} /> */}
-        {/* // <Header
-        //   header={this.header}
-        // />
-        // <HeaderNav
-        //   navBar={this.headerNav}
-        //   isLoggedIn={this.state.isLoggedIn}
-        // /> */}
-      {this.renderPath(this.state.path)}
-        {/* // <LogIn
-        //   login={this.logIn}
-        //   change={this.changePage}
-        // />
-        // <div className="col-md-6">
-        //   <div className="recipes">
-        //     <p>Recipes of the day:</p>
-        //     <div className="row">
+      
+         
+        <HeaderNav
+        changePath={this.changePath}
+          navBar={this.headerNav}
+          isLoggedIn={this.state.isLoggedIn}
+          userName={this.state.userName}
+          password={this.state.password}
+          onUserName={this.onUserNameChange}
+          onPassword={this.onPasswordChange}
+          login={this.login}
+        />
+        
+          {this.renderPath(this.state.path)} 
+        
+        <div className="col-md-6">
+          <div className="recipes">
+            <p>Recipes of the day:</p>
+            <div className="row">
 
 
-        //       <PopRecipe
-        //         recipe={this.recipe} />
-        //       <UserRecipe
-        //         recipe={this.recipe} />
-        //     </div>
-        //     <div className="row">
-        //       <HealthyRecipe
-        //         recipe={this.recipe} />
-        //       <DessertDay
-        //         recipe={this.recipe} />
-        //     </div>
-        //   </div>
-        // </div> */}
+              {/* <PopRecipe
+                recipe={this.recipe} />
+              <UserRecipe
+                recipe={this.recipe} />
+            </div>
+            <div className="row">
+              <HealthyRecipe
+                recipe={this.recipe} />
+              <DessertDay
+                recipe={this.recipe} /> */}
+            </div>
+          </div>
+        </div> 
 
 
       </div>

@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+// import {HOME, USERPROFILE} from '../constants'
 
 class HomePage extends Component {
     render(){
-        return
+        return(
+           <div></div> 
+        )
     }
 
 
 }
+
+export default HomePage;
