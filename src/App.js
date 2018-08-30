@@ -21,7 +21,7 @@ class App extends Component {
       password: 'food' 
     }],
     path: HOME,
-    isLoggedIn: false
+    goodLogIn: false
     
   }
 
@@ -83,6 +83,7 @@ class App extends Component {
         //     <p>Recipes of the day:</p>
         //     <div className="row">
 
+
         //       <PopRecipe
         //         recipe={this.recipe} />
         //       <UserRecipe
@@ -96,6 +97,8 @@ class App extends Component {
         //     </div>
         //   </div>
         // </div> */}
+
+
       </div>
     );
   }
