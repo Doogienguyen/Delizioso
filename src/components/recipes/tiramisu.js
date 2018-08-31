@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class PestoPasta extends Component {
+class Tiramisu extends Component {
 
     render() {
         return (
@@ -62,53 +62,62 @@ class PestoPasta extends Component {
                         </div>
                     </nav>
                 </div>
+
                 <div className="row">
                     <div className="col" >
-                        <h2 class="ingredients-header">Pesto Pasta<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <h2 class="ingredients-header">Tiramisu<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Favorite </button></h2>
 
                         <div>
-                            Pesto and pasta is perfectly delicious served plain with a bit of parmesan cheese and a sprinkling of extra roasted pine nuts if you have them.
-                    </div>
+                        Done correctly, a classic tiramisù can be transcendent. A creamy dessert of espresso-soaked ladyfingers surrounded by lightly sweetened whipped cream and a rich mascarpone, tiramisù relies heavily on the quality of its ingredients.</div>
                         <h3 class="ingredients-header">Ingredients<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Healthier Alternatives </button></h3>
                         <ul>
-                            <li>1 pound bucatini spaghetti or other favorite noodle</li>
-                            <li>1 garlic cloves</li>
-                            <li>1/2 cup toasted pine nuts</li>
-                            <li>2 cups fresh basil leaves washed and stemmed and finely packed</li>
-                            <li>1/2 cup olive oil</li>
-                            <li>1/2 cup fresh grated Parmesan cheese plus more for garnish</li>
-                            <li>1/2 lemon juiced</li>
-                            <li>1/2 teaspoon kosher salt</li>
-                            <li>fresh ground black pepper</li>
-                            <li>Cherry tomatoes</li>
+                            <h6>Cream</h6>
+                            <li>4  large egg yolks</li>
+                            <li>½  cup/100 grams granulated sugar, divided</li>
+                            <li>¾  cup heavy cream</li>
+                            <li>1  cup/227 grams mascarpone (8 ounces)</li>
+                        </ul> 
+                        <ul>
+                            <h6> Assembly</h6>
+                            <li>1 ¾  cups good espresso or very strong coffee</li>
+                            <li>2  tablespoons rum or cognac</li>
+                            <li>2 tablespoons unsweetened cocoa powder</li>
+                            <li> About 24 ladyfingers (from one 7-ounce/200-gram package)</li>
+                            <li>1 to 2  ounces bittersweet chocolate, for shaving (optional)</li>
                         </ul>
+                       
 
                         <div>
                             <h3 class="ingredients-header">Directions</h3>
                             <ol>
-                                <li>Cook the spaghetti or other pasta in large pot of salted boiling water according to package directions or until al dente. Drain the pasta and reserve 1 cup of the cooking water.</li>
-                                <li>While pasta is cooking, add the roughly chopped garlic, toasted pine nuts and finely grated parmesan cheese to a food processor and process until smooth. Then, add in the basil. Pulse a few times until chopped then let it run as you drizzle the olive oil into the processor as it runs until emulsified. Season with kosher salt and freshly ground black pepper, give a squeeze of lemon juice, and whiz again until combined. Taste for seasoning and adjust to your liking.</li>
-                                <li>Toss the hot pasta with the pesto in a large bowl and add reserved cooking water ¼ cup at a time or until saucy. Top with the cherry tomatoes and season with more salt and pepper if desired and garnish with more parmesan cheese.</li>
+                                <li>Using an electric mixer in a medium bowl, whip together egg yolks and 1/4 cup/50 grams sugar until very pale yellow and about tripled in volume. A slight ribbon should fall from the beaters (or whisk attachment) when lifted from the bowl. Transfer mixture to a large bowl, wiping out the medium bowl used to whip the yolks and set aside.</li>
+                                <li>In the medium bowl, whip cream and remaining 1/4 cup/50 grams sugar until it creates soft-medium peaks. Add mascarpone and continue to whip until it creates a soft, spreadable mixture with medium peaks. Gently fold the mascarpone mixture into the sweetened egg yolks until combined.</li>
+                                <li>Combine espresso and rum in a shallow bowl and set aside.</li>
+                                <li>Using a sifter, dust the bottom of a 2-quart baking dish (an 8x8-inch dish, or a 9-inch round cake pan would also work here) with 1 tablespoon cocoa powder.</li>
+                                <li>Working one at a time, quickly dip each ladyfinger into the espresso mixture -- they are quite porous and will fall apart if left in the liquid too long -- and place them rounded side up at the bottom of the baking dish. Repeat, using half the ladyfingers, until you’ve got an even layer, breaking the ladyfingers in half as needed to fill in any obvious gaps (a little space in between is O.K.). Spread half the mascarpone mixture onto the ladyfingers in one even layer. Repeat with remaining espresso-dipped ladyfingers and mascarpone mixture.</li>
+                                <li>Dust top layer with remaining tablespoon of cocoa powder. Top with shaved or finely grated chocolate, if desired.</li>
+                                <li>Cover with plastic wrap and let chill in the refrigerator for at least 4 hours (if you can wait 24 hours, all the better) before slicing or scooping to serve.</li>
                             </ol>
                         </div>
 
                     </div>
+
                     <div className="col" id="ingredients-box">
 
-                        <img className="recipe-picture" src="https://www.foodiecrush.com/wp-content/uploads/2017/09/Pesto-Pasta-Recipe-foodiecrush.com-002.jpg"></img>
+                        <img className="recipe-picture" src="http://images.honestcooking.com/wp-content/uploads/2016/12/2401039199_3509e6ec5c_o1-635x501.jpg"></img>
                     </div>
 
                 </div>
 
-</div>
 
-           
+
+            </div>
 
         )
     }
 }
 
 
-export default PestoPasta;
+export default Tiramisu;

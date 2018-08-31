@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class PestoPasta extends Component {
+class LemonChicken extends Component {
 
     render() {
         return (
@@ -64,51 +64,58 @@ class PestoPasta extends Component {
                 </div>
                 <div className="row">
                     <div className="col" >
-                        <h2 class="ingredients-header">Pesto Pasta<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <h2 class="ingredients-header">Lemon Chicken Pasta<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Favorite </button></h2>
 
                         <div>
-                            Pesto and pasta is perfectly delicious served plain with a bit of parmesan cheese and a sprinkling of extra roasted pine nuts if you have them.
+                        We love lemon, we love chicken and we love pasta so I had to make this tasty Lemon Chicken Pasta. Full of grilled chicken breasts, a lemon garlic cream sauce and asparagus this is a hearty meal that you won’t be able to stop enjoying. 
                     </div>
                         <h3 class="ingredients-header">Ingredients<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Healthier Alternatives </button></h3>
                         <ul>
-                            <li>1 pound bucatini spaghetti or other favorite noodle</li>
-                            <li>1 garlic cloves</li>
-                            <li>1/2 cup toasted pine nuts</li>
-                            <li>2 cups fresh basil leaves washed and stemmed and finely packed</li>
-                            <li>1/2 cup olive oil</li>
-                            <li>1/2 cup fresh grated Parmesan cheese plus more for garnish</li>
-                            <li>1/2 lemon juiced</li>
-                            <li>1/2 teaspoon kosher salt</li>
-                            <li>fresh ground black pepper</li>
-                            <li>Cherry tomatoes</li>
+                            <li>2 large boneless skinless chicken breasts</li>
+                            <li>1 16 oz pkg fettuccine</li>
+                            <li>1 lb asparagus tips only cut about 2 inches from top</li>
+                            <li>1 stick unsalted butter</li>
+                            <li>6 cloves garlic minced</li>
+                            <li>2 cups heavy cream</li>
+                            <li>1/4 cup lemon juice</li>
+                            <li>Zest of 1 large lemon</li>
+                            <li>1 cup parmesan cheese</li>
+                            <li>Salt and pepper to taste</li>
+                            <li>Parsley</li>
                         </ul>
 
                         <div>
                             <h3 class="ingredients-header">Directions</h3>
                             <ol>
-                                <li>Cook the spaghetti or other pasta in large pot of salted boiling water according to package directions or until al dente. Drain the pasta and reserve 1 cup of the cooking water.</li>
-                                <li>While pasta is cooking, add the roughly chopped garlic, toasted pine nuts and finely grated parmesan cheese to a food processor and process until smooth. Then, add in the basil. Pulse a few times until chopped then let it run as you drizzle the olive oil into the processor as it runs until emulsified. Season with kosher salt and freshly ground black pepper, give a squeeze of lemon juice, and whiz again until combined. Taste for seasoning and adjust to your liking.</li>
-                                <li>Toss the hot pasta with the pesto in a large bowl and add reserved cooking water ¼ cup at a time or until saucy. Top with the cherry tomatoes and season with more salt and pepper if desired and garnish with more parmesan cheese.</li>
+                                <li>Grill your chicken breasts until they reach 165 degrees.</li>
+                                <li>Meanwhile make pasta according to package directions, when there is only a few minutes left of cook time add in your asparagus, drain.</li>
+                                <li>To make your sauce in large pan melt butter.</li>
+                                <li>Add your garlic and cook for about 30 seconds or until fragrant.</li>
+                                <li>Add in your heavy cream and bring to a slow boil.</li>
+                                <li>Stir in your lemon juice and zest then add in parmesan until melted, sprinkle with some salt and pepper to taste.</li>
+                                <li>Add in pasta and asparagus and toss to coat.</li>
+                                <li>Top with sliced chicken breasts.</li>
+                                <li>Sprinkle with parsley and top with sliced lemons if desired.</li>
                             </ol>
                         </div>
 
                     </div>
                     <div className="col" id="ingredients-box">
 
-                        <img className="recipe-picture" src="https://www.foodiecrush.com/wp-content/uploads/2017/09/Pesto-Pasta-Recipe-foodiecrush.com-002.jpg"></img>
+                        <img className="recipe-picture" src="https://tornadoughalli.com/wp-content/uploads/2018/02/Lemon-Chicken-Pasta-2.jpg"></img>
                     </div>
 
                 </div>
 
-</div>
 
-           
+
+            </div>
 
         )
     }
 }
 
 
-export default PestoPasta;
+export default LemonChicken;

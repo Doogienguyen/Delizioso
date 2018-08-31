@@ -32,7 +32,7 @@ class HeaderNav extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
 
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="btn-group">

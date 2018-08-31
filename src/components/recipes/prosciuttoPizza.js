@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class PestoPasta extends Component {
+class ProsciuttoPizza extends Component {
 
     render() {
         return (
@@ -62,53 +62,53 @@ class PestoPasta extends Component {
                         </div>
                     </nav>
                 </div>
+
                 <div className="row">
                     <div className="col" >
-                        <h2 class="ingredients-header">Pesto Pasta<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <h2 class="ingredients-header">Prosciutto and Arugala Pizza<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Favorite </button></h2>
 
                         <div>
-                            Pesto and pasta is perfectly delicious served plain with a bit of parmesan cheese and a sprinkling of extra roasted pine nuts if you have them.
-                    </div>
-                        <h3 class="ingredients-header">Ingredients<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
-                            Healthier Alternatives </button></h3>
+                        This supersimple dish is packed with garlic and a judicious amount of crushed red pepper topped off with clams for you to enjoy</div>
+                        <h3 class="ingredients-header">Ingredients</h3>
                         <ul>
-                            <li>1 pound bucatini spaghetti or other favorite noodle</li>
-                            <li>1 garlic cloves</li>
-                            <li>1/2 cup toasted pine nuts</li>
-                            <li>2 cups fresh basil leaves washed and stemmed and finely packed</li>
-                            <li>1/2 cup olive oil</li>
-                            <li>1/2 cup fresh grated Parmesan cheese plus more for garnish</li>
-                            <li>1/2 lemon juiced</li>
-                            <li>1/2 teaspoon kosher salt</li>
-                            <li>fresh ground black pepper</li>
-                            <li>Cherry tomatoes</li>
+                            <li>1 batch Thin Crust Pizza Dough</li>
+                            <li>1 cup (8 fl. oz./250 ml) San Marzano Tomato Pizza Sauce</li>
+                            <li>2 cups (8 oz./250 g) shredded mozzarella cheese</li>
+                            <li>2 cups (2 oz./60 g) baby arugula</li>
+                            <li>Extra-virgin olive oil, to taste </li>
+                            <li>Lemon juice, to taste</li>
+                            <li>Kosher salt and freshly ground pepper, to taste</li>
+                            <li>3 oz. (90 g) prosciutto, very thinly sliced</li>
                         </ul>
 
                         <div>
                             <h3 class="ingredients-header">Directions</h3>
                             <ol>
-                                <li>Cook the spaghetti or other pasta in large pot of salted boiling water according to package directions or until al dente. Drain the pasta and reserve 1 cup of the cooking water.</li>
-                                <li>While pasta is cooking, add the roughly chopped garlic, toasted pine nuts and finely grated parmesan cheese to a food processor and process until smooth. Then, add in the basil. Pulse a few times until chopped then let it run as you drizzle the olive oil into the processor as it runs until emulsified. Season with kosher salt and freshly ground black pepper, give a squeeze of lemon juice, and whiz again until combined. Taste for seasoning and adjust to your liking.</li>
-                                <li>Toss the hot pasta with the pesto in a large bowl and add reserved cooking water ¼ cup at a time or until saucy. Top with the cherry tomatoes and season with more salt and pepper if desired and garnish with more parmesan cheese.</li>
+                                <li>Preheat a Breville pizza maker on the preheat setting for 30 minutes.</li>
+                                <li>On a lightly floured surface, roll out half of the dough into a 10-inch (25-cm) round. Prick the dough all over with the tines of a fork. Transfer the dough to a floured pizza peel. Spread half of the pizza sauce over the dough, leaving a 1/2-inch (12-mm) border uncovered. Top with half of the cheese.</li>
+                                <li>Transfer the pizza to the pizza maker. Bake on the classic setting according to the manufacturer’s instructions until the crust is crisp and the cheese is lightly browned, 10 to 11 minutes. Using the pizza peel, transfer the pizza to a cutting board.</li>
+                                <li>In a bowl, toss half of the arugula with olive oil, lemon juice and salt and pepper to taste. Drape the pizza with half of the sliced prosciutto and top with the dressed arugula. Slice and serve immediately.</li>
+                                <li>Preheat the pizza maker again and prepare the second pizza with the remaining ingredients as above. Makes two 10-inch (25-cm) pizzas.</li>
                             </ol>
                         </div>
 
                     </div>
+
                     <div className="col" id="ingredients-box">
 
-                        <img className="recipe-picture" src="https://www.foodiecrush.com/wp-content/uploads/2017/09/Pesto-Pasta-Recipe-foodiecrush.com-002.jpg"></img>
+                        <img className="recipe-picture" src="https://www.williams-sonoma.com/wsimgs/ab/images/dp/recipe/201803/0057/img39l.jpg"></img>
                     </div>
 
                 </div>
 
-</div>
 
-           
+
+            </div>
 
         )
     }
 }
 
 
-export default PestoPasta;
+export default ProsciuttoPizza;

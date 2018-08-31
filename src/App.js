@@ -11,6 +11,13 @@ import LimeShrimp from './components/recipes/limeShrimp';
 import PestoPasta from './components/recipes/pestoPasta';
 import Lasagna from './components/recipes/lasagna';
 import ChickenParm from './components/recipes/chickenParm';
+import Tiramisu from './components/recipes/tiramisu';
+import SpaghettiClam from './components/recipes/spaghettiClam';
+import Risotto from './components/recipes/risotto';
+import LemonChicken from './components/recipes/lemonChicken';
+import ProsciuttoPizza from './components/recipes/prosciuttoPizza';
+import SpinachRavioli from './components/recipes/spinachRavioli';
+import Cannolis from './components/recipes/cannolis';
 import Data from './data';
 
 // const HOME = 'HOME';
@@ -27,7 +34,6 @@ class App extends Component {
     },
     path: HOME,
     goodLogIn: false
-    
   }
 
  
@@ -98,10 +104,17 @@ class App extends Component {
     return (
       <div className="container-fluid">
 
-      {/* <LimeShrimp/>
+      <Cannolis/>
+      <SpinachRavioli/>
+      <ProsciuttoPizza/>
+      <LemonChicken/>
+      <Risotto/>
+      <SpaghettiClam/>
+      <Tiramisu/>
+      <LimeShrimp/>
       <PestoPasta/>
       <Lasagna/>
-      <ChickenParm/> */}
+      <ChickenParm/>
       
       <Header/>
          

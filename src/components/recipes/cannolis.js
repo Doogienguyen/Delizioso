@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class PestoPasta extends Component {
+class Cannolis extends Component {
 
     render() {
         return (
@@ -62,53 +62,50 @@ class PestoPasta extends Component {
                         </div>
                     </nav>
                 </div>
+
                 <div className="row">
                     <div className="col" >
-                        <h2 class="ingredients-header">Pesto Pasta<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <h2 class="ingredients-header">5-Ingredient Cannolis<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Favorite </button></h2>
 
                         <div>
-                            Pesto and pasta is perfectly delicious served plain with a bit of parmesan cheese and a sprinkling of extra roasted pine nuts if you have them.
-                    </div>
-                        <h3 class="ingredients-header">Ingredients<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
-                            Healthier Alternatives </button></h3>
+                        Homemade 5-Ingredient Cannolis are impressive and SO easy!</div>
+                        <h3 class="ingredients-header">Ingredients</h3>
                         <ul>
-                            <li>1 pound bucatini spaghetti or other favorite noodle</li>
-                            <li>1 garlic cloves</li>
-                            <li>1/2 cup toasted pine nuts</li>
-                            <li>2 cups fresh basil leaves washed and stemmed and finely packed</li>
-                            <li>1/2 cup olive oil</li>
-                            <li>1/2 cup fresh grated Parmesan cheese plus more for garnish</li>
-                            <li>1/2 lemon juiced</li>
-                            <li>1/2 teaspoon kosher salt</li>
-                            <li>fresh ground black pepper</li>
-                            <li>Cherry tomatoes</li>
-                        </ul>
-
+                            <li>8 cannoli shells, homemade or store bought will work</li>
+                            <li>2 cups ricotta cheese</li>
+                            <li>1 cup confectioners' sugar, plus extra for dusting</li>
+                            <li>3/4 cup mini chocolate chips, divided</li>
+                            <li>1 and 1/2 teaspoons pure vanilla extract</li>
+                        </ul> 
+                
                         <div>
                             <h3 class="ingredients-header">Directions</h3>
                             <ol>
-                                <li>Cook the spaghetti or other pasta in large pot of salted boiling water according to package directions or until al dente. Drain the pasta and reserve 1 cup of the cooking water.</li>
-                                <li>While pasta is cooking, add the roughly chopped garlic, toasted pine nuts and finely grated parmesan cheese to a food processor and process until smooth. Then, add in the basil. Pulse a few times until chopped then let it run as you drizzle the olive oil into the processor as it runs until emulsified. Season with kosher salt and freshly ground black pepper, give a squeeze of lemon juice, and whiz again until combined. Taste for seasoning and adjust to your liking.</li>
-                                <li>Toss the hot pasta with the pesto in a large bowl and add reserved cooking water ¼ cup at a time or until saucy. Top with the cherry tomatoes and season with more salt and pepper if desired and garnish with more parmesan cheese.</li>
+                                <li>Place the ricotta cheese into a fine mesh strainer and place it in the fridge to drain for at least 12 hours and up to 24 hours.</li>
+                                <li>When you're ready to make the filling:</li>
+                                <li>In a large bowl combine the drained ricotta cheese, confectioners' sugar, 1/4 cup of the mini chocolate chips, vanilla extract, and orange zest (if using); mix well. Using a spatula, carefully scrape the mixture into pastry bag fitted with a 1/2 inch open tip. Use at once, or refrigerate until needed; filling can be made up to 24 hours in advance.</li>
+                                <li>When ready to serve, pipe the filling into one end of cannoli shell, filling shell halfway, then pipe into other end. If you don't have a piping bag, you may spoon the filling into the shells. Repeat with remaining shells.</li>
+                                <li>Place remaining mini chocolate chips on a small plate. Dip each end of the cannoli into the chocolate chips, then lightly dust with confectioner's sugar. Serve at once.</li>
                             </ol>
                         </div>
 
                     </div>
+
                     <div className="col" id="ingredients-box">
 
-                        <img className="recipe-picture" src="https://www.foodiecrush.com/wp-content/uploads/2017/09/Pesto-Pasta-Recipe-foodiecrush.com-002.jpg"></img>
+                        <img className="recipe-picture" src="https://bakerbynature.com/wp-content/uploads/2016/11/untitled-67-of-101.jpg"></img>
                     </div>
 
                 </div>
 
-</div>
 
-           
+
+            </div>
 
         )
     }
 }
 
 
-export default PestoPasta;
+export default Cannolis;

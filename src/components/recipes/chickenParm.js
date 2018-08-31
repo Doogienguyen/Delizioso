@@ -65,9 +65,13 @@ class ChickenParm extends Component {
 
                 <div className="row">
                     <div className="col" >
+                    <h2 class="ingredients-header">Chicken Parmesan<button type="button" class="btn btn-outline-success btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+                           Favorite</button></h2>
+
                     <div>
                     Chicken parmigiana, or chicken parmesan, is a popular Italian-American dish. It consists of a breaded chicken breast topped with tomato sauce and mozzarella, parmesan or provolone cheese. </div>
-                        <h2 class="ingredients-header">Ingredients</h2>
+                        <h3 class="ingredients-header">Ingredients <button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Healthier Alternatives </button></h3>
                         <ul>
                             <li>1 lb. boneless skinless chicken breasts</li>
                             <li>8 oz. fresh mozzarella</li>
@@ -86,7 +90,7 @@ class ChickenParm extends Component {
                         </ul>
 
                         <div>
-                        <h2 class="ingredients-header">Directions</h2>
+                        <h3 class="ingredients-header">Directions</h3>
                         <ol>
                             <li>Preheat oven to 425°. Using a sharp paring knife, cut a deep slit into each chicken breast. Stuff pockets with mozzarella then press edges of the chicken together to seal the chicken. Season outside of chicken with salt and pepper.</li>
                             <li>Put the flour, eggs and panko bread crumbs into three separate shallow bowls. Into the panko bread crumbs, whisk in garlic powder, dried oregano, ¼ cup Parmesan and ½ teaspoon salt.</li>

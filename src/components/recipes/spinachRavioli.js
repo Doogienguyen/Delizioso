@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class PestoPasta extends Component {
+class SpinachRavioli extends Component {
 
     render() {
         return (
@@ -64,51 +64,58 @@ class PestoPasta extends Component {
                 </div>
                 <div className="row">
                     <div className="col" >
-                        <h2 class="ingredients-header">Pesto Pasta<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <h2 class="ingredients-header">Spinach Ravioli with Zucchini Ribbons<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Favorite </button></h2>
 
                         <div>
-                            Pesto and pasta is perfectly delicious served plain with a bit of parmesan cheese and a sprinkling of extra roasted pine nuts if you have them.
+                            For this light vegetarian ravioli recipe, we combine gorgeous long ribbons of zucchini with spinach-and-cheese-stuffed ravioli and a light cream sauce for a satisfying vegetarian pasta dinner.
+    
+    
                     </div>
                         <h3 class="ingredients-header">Ingredients<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Healthier Alternatives </button></h3>
                         <ul>
-                            <li>1 pound bucatini spaghetti or other favorite noodle</li>
-                            <li>1 garlic cloves</li>
-                            <li>1/2 cup toasted pine nuts</li>
-                            <li>2 cups fresh basil leaves washed and stemmed and finely packed</li>
-                            <li>1/2 cup olive oil</li>
-                            <li>1/2 cup fresh grated Parmesan cheese plus more for garnish</li>
-                            <li>1/2 lemon juiced</li>
-                            <li>1/2 teaspoon kosher salt</li>
-                            <li>fresh ground black pepper</li>
-                            <li>Cherry tomatoes</li>
+                            <li>2 medium zucchini, very thinly sliced lengthwise</li>
+                            <li>Loose Yellow Zucchini (Yellow Squash) 1 Lb</li>
+                            <li>1 pound fresh or frozen spinach-and-cheese ravioli</li>
+                            <li>Organic Baby Spinach 5 Oz</li>
+                            <li>2 cloves garlic, crushed</li>
+                            <li>½ teaspoon salt</li>
+                            <li>½ cup half-and-half</li>
+                            <li>2 teaspoons all-purpose flour</li>
+                            <li>1 tablespoon butter</li>
+                            <li>1 large shallot, minced</li>
+                            <li>¼ cup dry white wine</li>
+                            <li>¼ cup thinly sliced fresh basil</li>
+                            <li>¼ teaspoon freshly ground pepper</li>
+                            <li>¼ cup shredded Parmesan cheese</li>
                         </ul>
 
                         <div>
                             <h3 class="ingredients-header">Directions</h3>
                             <ol>
-                                <li>Cook the spaghetti or other pasta in large pot of salted boiling water according to package directions or until al dente. Drain the pasta and reserve 1 cup of the cooking water.</li>
-                                <li>While pasta is cooking, add the roughly chopped garlic, toasted pine nuts and finely grated parmesan cheese to a food processor and process until smooth. Then, add in the basil. Pulse a few times until chopped then let it run as you drizzle the olive oil into the processor as it runs until emulsified. Season with kosher salt and freshly ground black pepper, give a squeeze of lemon juice, and whiz again until combined. Taste for seasoning and adjust to your liking.</li>
-                                <li>Toss the hot pasta with the pesto in a large bowl and add reserved cooking water ¼ cup at a time or until saucy. Top with the cherry tomatoes and season with more salt and pepper if desired and garnish with more parmesan cheese.</li>
+                                <li>Put a pot of water on to boil. Place sliced zucchini in a large colander and set it in the sink. Cook ravioli according to package directions. Pour the ravioli and cooking liquid over the zucchini in the colander.</li>
+                                <li>Meanwhile, mash garlic and salt together in a small bowl with a fork to form a coarse paste. Combine half-and-half and flour in another small bowl and place near the stove.</li>
+                                <li>Heat butter in a large skillet over medium-high heat. Add shallot and the garlic paste and cook, stirring, until fragrant, about 1 minute. Add wine and cook, stirring, until almost completely evaporated, 2 to 3 minutes more. Add the flour mixture and cook, stirring, until the sauce is thickened, about 30 seconds. Gently stir in the ravioli and zucchini, basil and pepper. Divide among 4 plates. Top each portion with 1 tablespoon Parmesan.</li>
+                                <li>To make “ribbon-thin” zucchini, slice lengthwise with a vegetable peeler or a mandoline slicer.</li>
                             </ol>
                         </div>
 
                     </div>
                     <div className="col" id="ingredients-box">
 
-                        <img className="recipe-picture" src="https://www.foodiecrush.com/wp-content/uploads/2017/09/Pesto-Pasta-Recipe-foodiecrush.com-002.jpg"></img>
+                        <img className="recipe-picture" src="http://images.media-allrecipes.com/userphotos/960x960/3758232.jpg"></img>
                     </div>
 
                 </div>
 
-</div>
 
-           
+
+            </div>
 
         )
     }
 }
 
 
-export default PestoPasta;
+export default SpinachRavioli;
