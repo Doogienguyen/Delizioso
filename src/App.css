@@ -27,12 +27,6 @@ nav{
     width: 500px;
 }
 
-/* #img-logo {
-    width:500px;
-    position: relative;
-    left: 500px;
-} */
-
 .recipes{
    position: relative;
    left: 400px; 
@@ -74,8 +68,6 @@ nav{
     width: 540px;
     
 }
-
-
 
 /* User Profile */
 
@@ -195,3 +187,37 @@ body {
     width:700px;
 }
   /* End */
+
+  /* Gallery */
+
+  .gallery-title {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+.img-responsive {
+  position: relative;
+  float: left;
+  width:  1500px;
+  height: 350px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+/* end */

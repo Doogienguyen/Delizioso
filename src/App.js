@@ -19,6 +19,8 @@ import ProsciuttoPizza from './components/recipes/prosciuttoPizza';
 import SpinachRavioli from './components/recipes/spinachRavioli';
 import Cannolis from './components/recipes/cannolis';
 import Data from './data';
+import Allrecipes from './components/allRecipes';
+import LemonGelato from './components/recipes/lemonGelato'
 
 // const HOME = 'HOME';
 // const USERPROFILE ="USERPROFILE";
@@ -104,6 +106,8 @@ class App extends Component {
     return (
       <div className="container-fluid">
 
+      {/* <Allrecipes/>
+      <LemonGelato/>
       <Cannolis/>
       <SpinachRavioli/>
       <ProsciuttoPizza/>
@@ -114,7 +118,7 @@ class App extends Component {
       <LimeShrimp/>
       <PestoPasta/>
       <Lasagna/>
-      <ChickenParm/>
+      <ChickenParm/> */}
       
       <Header/>
          
@@ -129,7 +133,19 @@ class App extends Component {
           login={this.login}
           onTermChange={this.handleTermChange}
         />
-        
+      {/* <Allrecipes/>
+      <LemonGelato/>
+      <Cannolis/>
+      <SpinachRavioli/>
+      <ProsciuttoPizza/>
+      <LemonChicken/>
+      <Risotto/>
+      <SpaghettiClam/>
+      <Tiramisu/>
+      <LimeShrimp/>
+      <PestoPasta/>
+      <Lasagna/>
+      <ChickenParm/> */}
           {this.renderPath(this.state.path)} 
         
         

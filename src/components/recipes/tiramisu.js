@@ -3,66 +3,6 @@ class Tiramisu extends Component {
 
     render() {
         return (
-            <div className="container">
-                <div className="header">
-                    <h1 ><img src="./components/logo2.png" /></h1>
-                </div>
-
-                <div>
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <div className="btn-group">
-                            <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                Login <span className="caret"></span>
-                            </button>
-                            <ul className="dropdown-menu">
-
-                                <div className="form-group">
-                                    <input type="email" className="form-control" id="inputEmail1" placeholder="Email" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="password" className="form-control" id="inputPassword1" placeholder="Password" />
-                                </div>
-                                <div className="form-group">
-                                    <button type="submit" className="btn btn-default" onClick={() => console.log('click')} >Sign in</button>
-                                </div>
-
-                                <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="#">New around here? Sign up</a>
-                                <a className="dropdown-item" href="#">Forgot password?</a>
-                            </ul>
-                        </div>
-
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav mr-auto">
-                                <li className="nav-item active">
-                                    <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Sumbit a Recipe</a>
-                                </li>
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Browse Recipes
-                                    </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Low Calorie</a>
-                                        <a className="dropdown-item" href="#">Vegetarian</a>
-                                        <a className="dropdown-item" href="#">Pastas</a>
-                                        <a className="dropdown-item" href="#">Chicken</a>
-                                        <a className="dropdown-item" href="#">Desserts</a>
-                                        <div className="dropdown-divider"></div>
-                                        <a className="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <form className="form-inline my-2 my-lg-0">
-                                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </nav>
-                </div>
-
                 <div className="row">
                     <div className="col" >
                         <h2 class="ingredients-header">Tiramisu<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -74,10 +14,10 @@ class Tiramisu extends Component {
                             Healthier Alternatives </button></h3>
                         <ul>
                             <h6>Cream</h6>
-                            <li>4  large egg yolks</li>
-                            <li>½  cup/100 grams granulated sugar, divided</li>
-                            <li>¾  cup heavy cream</li>
-                            <li>1  cup/227 grams mascarpone (8 ounces)</li>
+                            <li>4 large egg yolks</li>
+                            <li>½ cup/100 grams granulated sugar, divided</li>
+                            <li>¾ cup heavy cream</li>
+                            <li>1 cup/227 grams mascarpone (8 ounces)</li>
                         </ul> 
                         <ul>
                             <h6> Assembly</h6>
@@ -106,14 +46,13 @@ class Tiramisu extends Component {
 
                     <div className="col" id="ingredients-box">
 
-                        <img className="recipe-picture" src="http://images.honestcooking.com/wp-content/uploads/2016/12/2401039199_3509e6ec5c_o1-635x501.jpg"></img>
+                        <img className="recipe-picture" src="http://images.honestcooking.com/wp-content/uploads/2016/12/2401039199_3509e6ec5c_o1-635x501.jpg"/>
                     </div>
 
                 </div>
 
 
 
-            </div>
 
         )
     }
