@@ -92,6 +92,7 @@ class LimeShrimp extends Component {
                         </div>
 
                     </div>
+                    
                     <div className="col" id="ingredients-box">
                     
                         <img className="recipe-picture" src="https://www.eatwell101.com/wp-content/uploads/2017/05/Cilantro-Lime-Shrimp-with-Zucchini-Noodles-recipe.jpg"></img>
