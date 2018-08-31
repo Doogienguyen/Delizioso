@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { HOME, USERPROFILE } from '../../constants';
+import { HOME, USERPROFILE, PESTOPASTA } from '../../constants';
 class HeaderNav extends Component {
     state = {
         userName: "",
-        password: ""
+        password: "",
+        
     }
-
+   
     onUserNameChange = e => {
         this.setState({
             userName: e.target.value
@@ -26,9 +27,8 @@ class HeaderNav extends Component {
 
         });
     }
-  returnHome = e => {
-      this.props.changePath(HOME);
-  }
+    
+  
 
     render() {
         return (
@@ -48,7 +48,7 @@ class HeaderNav extends Component {
                                 <input type="password" className="form-control" value={this.props.password} onChange={this.onPasswordChange} placeholder="Password" />
                             </div>
                             <div className="form-group">
-                                <button type="submit" className="btn btn-default" onClick={this.buttonClicked} >Sign in</button>
+                                <button type="submit" className="btn btn-warning" onClick={this.buttonClicked} >Sign in</button>
                             </div>
 
                             <div className="dropdown-divider"></div>
@@ -56,9 +56,10 @@ class HeaderNav extends Component {
                             <a className="dropdown-item" href="#">Forgot password?</a>
                         </ul>
                     </div>
-
+                    
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
+                            
                             <li className="nav-item active">
                                 <button className="btn btn-link" onClick={() => { this.props.changePath(HOME)}} >Home</button>
                                 
@@ -71,7 +72,7 @@ class HeaderNav extends Component {
                                     Browse Recipes
                             </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a className="dropdown-item" href="#">Low Calorie</a>
+                                    <a className="dropdown-item" onClick={() => { this.props.changePath(PESTOPASTA)}} >Low Calorie</a>
                                     <a className="dropdown-item" href="#">Vegetarian</a>
                                     <a className="dropdown-item" href="#">Pastas</a>
                                     <a className="dropdown-item" href="#">Chicken</a>
@@ -82,8 +83,9 @@ class HeaderNav extends Component {
                             </li>
                         </ul>
                         <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            <input className="form-control mr-sm-2" type="search" placeholder="Search"  ref={input => this.search = input}
+                                onChange={this.handleInputChange} /> <p>{this.state.query}</p>
+                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
                         </form>
                     </div>
                 </nav>

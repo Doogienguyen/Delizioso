@@ -23,7 +23,10 @@ class UserProfile extends Component {
                                 }
                         </div>
                         <div className="profile-usertitle-job">
-                           Iron Chef
+                        {
+                            this.props.goodLogIn &&
+                        
+                           <p>Iron Chef</p> }
                         </div>
                     </div>
                     

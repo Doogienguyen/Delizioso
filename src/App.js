@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import logIn from './components/logIn';
-// import dessertDay from './components/dessertDay';
-// import healtyRecipe from './components/healthyRecipe';
-// import popRecipe from './components/popRecipe';
-// import userRecipe from './components/userRecipe';
 import './App.css';
 import Header from './components/headeritems/header';
 import HeaderNav from './components/headeritems/headerNav';
@@ -11,11 +7,11 @@ import userProfile from './components/userProfile';
 import HomePage from './components/homePage';
 import UserProfile from './components/userProfile';
 import {HOME,USERPROFILE, LIMESHRIMP, CHICKENPARM, PESTOPASTA, LASAGNA} from './constants';
-
 import LimeShrimp from './components/recipes/limeShrimp';
 import PestoPasta from './components/recipes/pestoPasta';
-import Lasagna from './components/recipes/lasagna'
-import ChickenParm from './components/recipes/chickenParm'
+import Lasagna from './components/recipes/lasagna';
+import ChickenParm from './components/recipes/chickenParm';
+import Data from './data';
 
 // const HOME = 'HOME';
 // const USERPROFILE ="USERPROFILE";
@@ -24,6 +20,7 @@ import ChickenParm from './components/recipes/chickenParm'
 class App extends Component {
 
   state = {
+    recipes: Data,
     users: { 
       userName: 'Tram', 
       password: 'food' 
@@ -33,7 +30,7 @@ class App extends Component {
     
   }
 
-  
+ 
 
   login = user => {
       if (user.username === this.state.users.username && user.password === this.state.users.password) {
@@ -117,30 +114,12 @@ class App extends Component {
           onUserName={this.onUserNameChange}
           onPassword={this.onPasswordChange}
           login={this.login}
+          onTermChange={this.handleTermChange}
         />
         
           {this.renderPath(this.state.path)} 
         
-        {/* <div className="col-md-6">
-          <div className="recipes">
-            <p>Recipes of the day:</p>
-            
-            <div className="row">
-
-
-              <PopRecipe
-                recipe={this.recipe} />
-              <UserRecipe
-                recipe={this.recipe} />
-            </div>
-            <div className="row">
-              <HealthyRecipe
-                recipe={this.recipe} />
-              <DessertDay
-                recipe={this.recipe} />
-            </div>
-          </div>
-        </div>  */}
+        
 
 
       </div>
