@@ -3,7 +3,7 @@ class Cannolis extends Component {
 
     render() {
         return (
-        
+           
                 <div className="row">
                     <div className="col" >
                         <h2 class="ingredients-header">5-Ingredient Cannolis<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -42,6 +42,7 @@ class Cannolis extends Component {
 
 
 
+            
 
         )
     }

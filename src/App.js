@@ -38,13 +38,18 @@ class App extends Component {
     goodLogIn: false
   }
 
- 
-
+ resultRecipe = result => {
+   this.setState({
+     path: (result.recipeName)
+   })
+  }
   login = user => {
       if (user.username === this.state.users.username && user.password === this.state.users.password) {
         this.setState({ goodLogIn: true });
+        this.changePath(USERPROFILE);
       } else {
-        this.setState({ goodLogIn: false });
+        // this.setState({ goodLogIn: false });
+        alert("Username/Password does not match. Please try again");
       
     }
   }
@@ -123,10 +128,11 @@ class App extends Component {
       <Header/>
          
         <HeaderNav
+        recipes={this.state.recipes}
           changePath={this.changePath}
           navBar={this.headerNav}
           goodLogIn={this.state.goodLogIn}
-          userName={this.state.userName}
+          userName={this.state.users.userName}
           password={this.state.password}
           onUserName={this.onUserNameChange}
           onPassword={this.onPasswordChange}
