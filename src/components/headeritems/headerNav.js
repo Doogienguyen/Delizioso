@@ -4,6 +4,7 @@ class HeaderNav extends Component {
     state = {
         userName: "",
         password: "",
+        recipeInput: ""
         
     }
    
@@ -19,16 +20,34 @@ class HeaderNav extends Component {
     }
     buttonClicked = e => {
         e.preventDefault();
-        this.props.login(this.state)
-        this.props.changePath(USERPROFILE);
+        this.props.login(this.state);
+        // this.props.changePath(USERPROFILE);
         this.setState({
             userName: "",
             password: "",
 
         });
     }
+    onSearch = e => {
+        this.setState({
+            recipeInput: e.target.value
+        })
+    }
     
-  
+  searchRecipe = e => {
+      e.preventDefault();
+    console.log(this.state.recipeInput);
+    let item = this.props.recipes.filter(r => r.recipeName == this.state.recipeInput );
+    let items = this.props.recipes.filter(r => r.keywords.indexOf(this.state.recipeInput) != -1);
+    
+    var result = item.length > 0 ? item : items
+
+    // var result = [...item, ...items];
+    console.log(result);
+    this.setState({
+        recipeInput: ""
+    })
+  }
 
     render() {
         return (
@@ -39,13 +58,14 @@ class HeaderNav extends Component {
                         <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             Login <span className="caret"></span>
                         </button>
+                        
                         <ul className="dropdown-menu">
 
                             <div className="form-group">
-                                <input type="email" className="form-control" value={this.props.userName} onChange={this.onUserNameChange} placeholder="User Name" />
+                                <input type="text" className="form-control" value={this.state.userName} onChange={this.onUserNameChange} placeholder="User Name" />
                             </div>
                             <div className="form-group">
-                                <input type="password" className="form-control" value={this.props.password} onChange={this.onPasswordChange} placeholder="Password" />
+                                <input type="password" className="form-control" value={this.state.password} onChange={this.onPasswordChange} placeholder="Password" />
                             </div>
                             <div className="form-group">
                                 <button type="submit" className="btn btn-warning" onClick={this.buttonClicked} >Sign in</button>
@@ -61,8 +81,11 @@ class HeaderNav extends Component {
                         <ul className="navbar-nav mr-auto">
                             
                             <li className="nav-item active">
-                                <button className="btn btn-link" onClick={() => { this.props.changePath(HOME)}} >Home</button>
-                                
+                            <button className="btn btn-link">{ this.props.goodLogIn && <p>Hello, {this.props.userName}</p>}</button>
+                                  
+                            </li>
+                            <li className="nav-item">
+                            <button className="btn btn-link" onClick={() => { this.props.changePath(HOME)}} >Home</button>
                             </li>
                             <li className="nav-item">
                             <button className="btn btn-link" >Submit a Recipe</button>
@@ -72,20 +95,19 @@ class HeaderNav extends Component {
                                     Browse Recipes
                             </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <a className="dropdown-item" href="#">All Recipes</a>
                                     <a className="dropdown-item" onClick={() => { this.props.changePath(PESTOPASTA)}} >Low Calorie</a>
                                     <a className="dropdown-item" href="#">Vegetarian</a>
                                     <a className="dropdown-item" href="#">Pastas</a>
                                     <a className="dropdown-item" href="#">Chicken</a>
                                     <a className="dropdown-item" href="#">Desserts</a>
-                                    <div className="dropdown-divider"></div>
-                                    <a className="dropdown-item" href="#">Something else here</a>
+                                    
                                 </div>
                             </li>
                         </ul>
                         <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-2" type="search" placeholder="Search"  ref={input => this.search = input}
-                                onChange={this.handleInputChange} /> <p>{this.state.query}</p>
-                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
+                            <input className="form-control mr-sm-2" type="search" placeholder="Search"  value={this.state.recipeInput} onChange={this.onSearch}/>
+                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={this.searchRecipe}>Search</button>
                         </form>
                     </div>
                 </nav>
