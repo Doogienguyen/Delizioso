@@ -65,9 +65,13 @@ class Lasagna extends Component {
 
                 <div className="row">
                     <div className="col" >
+                    <h2 class="ingredients-header">Lasagna<button type="button" class="btn btn-outline-success btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Favorite </button></h2>
+
                         <div>
                         One of the most loved foods in the world is finally here! This is a traditional Italian Lasagna, made the Italian way with layers of slow cooked Bolognese ragu and cheese sauce. No ricotta – that’s the American-Italian version. Though patience is required.</div>
-                        <h2 class="ingredients-header">Ingredients</h2>
+                        <h3 class="ingredients-header">Ingredients<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Healthier Alternatives </button></h3>
                         <ul>
                             <h6>Ragu Bolognese</h6>
                             <li>1 tbsp olive oil</li>
@@ -99,7 +103,7 @@ class Lasagna extends Component {
                         </ul>
 
                         <div>
-                            <h2 class="ingredients-header">Directions</h2>
+                            <h3 class="ingredients-header">Directions</h3>
                             <ol>
                                 <h6>Ragu</h6>
                                 <li>Heat oil in a large heavy based pot over medium heat. Add garlic, onion, celery and carrots. Cook for 10 minutes until softened and sweet - they should not brown (if they do, turn heat down).</li>

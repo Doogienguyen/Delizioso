@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
 import logIn from './components/logIn';
+// import dessertDay from './components/dessertDay';
+// import healtyRecipe from './components/healthyRecipe';
+// import popRecipe from './components/popRecipe';
+// import userRecipe from './components/userRecipe';
 import './App.css';
 import Header from './components/headeritems/header';
 import HeaderNav from './components/headeritems/headerNav';
 import userProfile from './components/userProfile';
 import HomePage from './components/homePage';
-
 import UserProfile from './components/userProfile';
-import {HOME,USERPROFILE} from './constants';
+import {HOME,USERPROFILE, LIMESHRIMP, CHICKENPARM, PESTOPASTA, LASAGNA} from './constants';
 
 import LimeShrimp from './components/recipes/limeShrimp';
 import PestoPasta from './components/recipes/pestoPasta';
-import Lasagna from './components/recipes/lasagna'
-import ChickenParm from './components/recipes/chickenParm'
+import Lasagna from './components/recipes/lasagna';
+import ChickenParm from './components/recipes/chickenParm';
+import Tiramisu from './components/recipes/tiramisu';
+import SpaghettiClam from './components/recipes/spaghettiClam';
+import Risotto from './components/recipes/risotto';
+import LemonChicken from './components/recipes/lemonChicken';
+import ProsciuttoPizza from './components/recipes/prosciuttoPizza';
+import SpinachRavioli from './components/recipes/spinachRavioli';
+import Cannolis from './components/recipes/cannolis';
 
 // const HOME = 'HOME';
 // const USERPROFILE ="USERPROFILE";
@@ -21,24 +31,22 @@ import ChickenParm from './components/recipes/chickenParm'
 class App extends Component {
 
   state = {
-    users: [{ 
+    users: { 
       userName: 'Tram', 
       password: 'food' 
-    }],
+    },
     path: HOME,
     goodLogIn: false
-    
   }
 
   
 
   login = user => {
-    for (let i = 0; i < this.state.users.length; i++) {
-      if (user.username === this.state.users[i].username && user.password === this.state.users[i].password) {
-        this.setState({ goodLogin: true });
+      if (user.username === this.state.users.username && user.password === this.state.users.password) {
+        this.setState({ goodLogIn: true });
       } else {
-        this.setState({ goodLogin: false });
-      }
+        this.setState({ goodLogIn: false });
+      
     }
   }
   changePath = x => {
@@ -61,10 +69,35 @@ class App extends Component {
         return (
           <UserProfile
             changePath={this.changePath}
-            username={this.state.userName}
-            goodLogin={this.state.goodLogin}/>
+            userName={this.state.users.userName}
+            goodLogIn={this.state.goodLogIn}/>
         )
-        
+        case LIMESHRIMP: 
+        return (
+          <LimeShrimp
+            changePath={this.changePath}
+            userName={this.state.users.userName}
+            />
+        )
+        case CHICKENPARM: 
+        return (
+          <ChickenParm
+            changePath={this.changePath}
+            />
+          
+        )
+        case PESTOPASTA: 
+        return (
+          <PestoPasta
+            changePath={this.changePath}
+            />
+        )
+        case LASAGNA: 
+        return (
+          <Lasagna
+            changePath={this.changePath}
+            />
+        )
     }
   }
 
@@ -74,6 +107,13 @@ class App extends Component {
     return (
       <div className="container-fluid">
 
+      <Cannolis/>
+      <SpinachRavioli/>
+      <ProsciuttoPizza/>
+      <LemonChicken/>
+      <Risotto/>
+      <SpaghettiClam/>
+      <Tiramisu/>
       <LimeShrimp/>
       <PestoPasta/>
       <Lasagna/>
@@ -82,9 +122,9 @@ class App extends Component {
       <Header/>
          
         <HeaderNav
-        changePath={this.changePath}
+          changePath={this.changePath}
           navBar={this.headerNav}
-          isLoggedIn={this.state.isLoggedIn}
+          goodLogIn={this.state.goodLogIn}
           userName={this.state.userName}
           password={this.state.password}
           onUserName={this.onUserNameChange}
@@ -94,13 +134,14 @@ class App extends Component {
         
           {this.renderPath(this.state.path)} 
         
-        <div className="col-md-6">
+        {/* <div className="col-md-6">
           <div className="recipes">
             <p>Recipes of the day:</p>
+            
             <div className="row">
 
 
-              {/* <PopRecipe
+              <PopRecipe
                 recipe={this.recipe} />
               <UserRecipe
                 recipe={this.recipe} />
@@ -109,10 +150,10 @@ class App extends Component {
               <HealthyRecipe
                 recipe={this.recipe} />
               <DessertDay
-                recipe={this.recipe} /> */}
+                recipe={this.recipe} />
             </div>
           </div>
-        </div> 
+        </div>  */}
 
 
       </div>

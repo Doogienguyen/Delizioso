@@ -1,82 +1,79 @@
 import React, {Component} from 'react';
 import {HOME, USERPROFILE } from '../constants'
 
+
 class UserProfile extends Component {
-render () {
-    return(
-<div>
-<div class="container"><br/>
-    <div class="row profile">
-		<div class="col-md-3">
-			<div class="profile-sidebar">
-				{/* <!-- SIDEBAR USERPIC --> */}
-				<div class="profile-userpic">
-					<img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive" alt=""/>
-				</div>
-				{/* <!-- END SIDEBAR USERPIC -->
-				<!-- SIDEBAR USER TITLE --> */}
-				<div class="profile-usertitle">
-					<div class="profile-usertitle-name">
-						Person Name 
-					</div>
-					<div class="profile-usertitle-job">
-						Chef
-					</div>
-				</div>
-				{/* <!-- END SIDEBAR USER TITLE -->
-				<!-- SIDEBAR BUTTONS --> */}
-				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-success btn-sm">Follow</button>
-					<button type="button" class="btn btn-danger btn-sm">Message</button>
-				</div>
-				{/* <!-- END SIDEBAR BUTTONS -->
-				<!-- SIDEBAR MENU --> */}
-				<div class="profile-usermenu">
-					<ul class="nav">
-						<li class="active">
-							<a href="#">
-							<i class="glyphicon glyphicon-home"></i>
-							Overview </a>
-						</li>
-						<li>
-							<a href="#">
-							<i class="glyphicon glyphicon-user"></i>
-							Account Settings </a>
-						</li>
-						<li>
-							<a href="#" target="_blank">
-							<i class="glyphicon glyphicon-ok"></i>
-							Favorite Recipes  </a>
-						</li>
-						<li>
-							<a href="#">
-							<i class="glyphicon glyphicon-flag"></i>
-							My Recipes  </a>
-						</li>
-					</ul>
-				</div>
-				{/* <!-- END MENU --> */}
-			</div>
-		</div>
-		<div class="col-md-9">
-            <div class="profile-content">
-			   Some user related content goes here...
+    render () {
+        return(
+    <div>
+    <div className="container">
+        <div className="row profile">
+            <div className="col-md-3">
+                <div className="profile-sidebar">
+                    
+                    <div className="profile-userpic">
+                        <img src="http://cerveceria-harmony.com/wp-content/uploads/2017/11/Cerveceria-Harmony-cookies.jpg"  />
+                    </div>
+                    
+                    <div className="profile-usertitle">
+                        
+                        <div className="profile-usertitle-name">
+                        {
+                                this.props.goodLogIn && <p>Hello, {this.props.userName}</p>
+                                }
+                        </div>
+                        <div className="profile-usertitle-job">
+                           Iron Chef
+                        </div>
+                    </div>
+                    
+                    <div className="profile-userbuttons">
+                        <button type="button" className="btn btn-success btn-sm">Follow</button>
+                        <button type="button" className="btn btn-danger btn-sm">Message</button>
+                    </div>
+                    {/* <!-- END SIDEBAR BUTTONS -->
+                    <!-- SIDEBAR MENU --> */}
+                    <div className="profile-usermenu">
+                        <ul className="nav">
+                            
+                            <li>
+                                <a href="#">
+                                <i className="glyphicon glyphicon-user"></i>
+                                Account Settings </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                <i className="glyphicon glyphicon-ok"></i>
+                                Favorite Recipes  </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i className="glyphicon glyphicon-flag"></i>
+                                My Recipes  </a>
+                            </li>
+                        </ul>
+                    </div>
+                    {/* <!-- END MENU --> */}
+                </div>
             </div>
-		</div>
-	</div>
-</div>
-<br/>
-<br/>
-</div>
-
-
-
-
-    )
-}
-
-
-
-}
-
-export default UserProfile;
+            <div className="col-md-9">
+                <div className="profile-content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    
+    
+    
+    
+        )
+    }
+    
+    
+    
+    }
+    
+    export default UserProfile;

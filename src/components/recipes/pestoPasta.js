@@ -62,13 +62,16 @@ class PestoPasta extends Component {
                         </div>
                     </nav>
                 </div>
-
                 <div className="row">
                     <div className="col" >
+                        <h2 class="ingredients-header">Pesto Pasta<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Favorite </button></h2>
+
                         <div>
                             Pesto and pasta is perfectly delicious served plain with a bit of parmesan cheese and a sprinkling of extra roasted pine nuts if you have them.
                     </div>
-                        <h2 class="ingredients-header">Ingredients</h2>
+                        <h3 class="ingredients-header">Ingredients<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Healthier Alternatives </button></h3>
                         <ul>
                             <li>1 pound bucatini spaghetti or other favorite noodle</li>
                             <li>1 garlic cloves</li>
@@ -83,7 +86,7 @@ class PestoPasta extends Component {
                         </ul>
 
                         <div>
-                            <h2 class="ingredients-header">Directions</h2>
+                            <h3 class="ingredients-header">Directions</h3>
                             <ol>
                                 <li>Cook the spaghetti or other pasta in large pot of salted boiling water according to package directions or until al dente. Drain the pasta and reserve 1 cup of the cooking water.</li>
                                 <li>While pasta is cooking, add the roughly chopped garlic, toasted pine nuts and finely grated parmesan cheese to a food processor and process until smooth. Then, add in the basil. Pulse a few times until chopped then let it run as you drizzle the olive oil into the processor as it runs until emulsified. Season with kosher salt and freshly ground black pepper, give a squeeze of lemon juice, and whiz again until combined. Taste for seasoning and adjust to your liking.</li>

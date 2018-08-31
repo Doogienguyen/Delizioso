@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class ChickenParm extends Component {
+class SpaghettiClam extends Component {
 
     render() {
         return (
@@ -65,46 +65,38 @@ class ChickenParm extends Component {
 
                 <div className="row">
                     <div className="col" >
-                    <h2 class="ingredients-header">Chicken Parmesan<button type="button" class="btn btn-outline-success btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
-                           Favorite</button></h2>
+                        <h2 class="ingredients-header">Spaghetti with Clams and Garlic<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Favorite </button></h2>
 
-                    <div>
-                    Chicken parmigiana, or chicken parmesan, is a popular Italian-American dish. It consists of a breaded chicken breast topped with tomato sauce and mozzarella, parmesan or provolone cheese. </div>
-                        <h3 class="ingredients-header">Ingredients <button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
-                            Healthier Alternatives </button></h3>
+                        <div>
+                        This supersimple dish is packed with garlic and a judicious amount of crushed red pepper topped off with clams for you to enjoy</div>
+                        <h3 class="ingredients-header">Ingredients</h3>
                         <ul>
-                            <li>1 lb. boneless skinless chicken breasts</li>
-                            <li>8 oz. fresh mozzarella</li>
-                            <li>kosher salt</li>
+                            <li>1 pound spaghetti</li>
+                            <li>Salt</li>
+                            <li>1/4 cup extra-virgin olive oil</li>
+                            <li>4 garlic cloves, minced</li>
+                            <li>1/2 teaspoon crushed red pepper</li>
+                            <li>2 dozen littleneck clams, scrubbed</li>
+                            <li>1/4 cup water</li>
+                            <li>1/4 cup finely chopped parsley</li>
                             <li>Freshly ground black pepper</li>
-                            <li>1 c. flour</li>
-                            <li>3 Eggs, beaten</li>
-                            <li>1 c. panko bread crumbs</li>
-                            <li>1 tsp. dried oregano</li>
-                            <li>1/2 tsp. garlic powder</li>
-                            <li>1/2 c. freshly grated Parmesan, divided</li>
-                            <li>Olive oil, for frying</li>
-                            <li>2 c. marinara</li>
-                            <li>1/4 c. Thinly sliced basil</li>
-                            <li>2 tbsp. chopped parsley</li>
                         </ul>
 
                         <div>
-                        <h3 class="ingredients-header">Directions</h3>
-                        <ol>
-                            <li>Preheat oven to 425°. Using a sharp paring knife, cut a deep slit into each chicken breast. Stuff pockets with mozzarella then press edges of the chicken together to seal the chicken. Season outside of chicken with salt and pepper.</li>
-                            <li>Put the flour, eggs and panko bread crumbs into three separate shallow bowls. Into the panko bread crumbs, whisk in garlic powder, dried oregano, ¼ cup Parmesan and ½ teaspoon salt.</li>
-                            <li>Dip the stuffed chicken in flour, shaking off excess, then dip the chicken into egg, tossing to coat. Dredge chicken in bread crumbs, making sure the chicken is evenly coated.</li>
-                            <li>In a large skillet over medium heat, heat a thin layer of olive oil. Add chicken to skillet and cook until golden on both sides, about 4 minutes per side. Pour marinara around chicken and scatter basil on top of marinara. Turn off heat then sprinkle remaining Parmesan on top of chicken.</li>
-                            <li>Transfer skillet to oven and bake until the chicken is cooked through, about 20 minutes more. Garnish with parsley and serve warm.
-</li>
-                        </ol>
+                            <h3 class="ingredients-header">Directions</h3>
+                            <ol>
+                                <li>In a large pot of boiling salted water, cook the spaghetti until just al dente, then drain the pasta well.</li>
+                                <li>Meanwhile, in a large, deep skillet, heat the olive oil. Add the minced garlic and crushed red pepper and cook over moderately high heat, stirring occasionally, until the garlic is lightly browned, about 1 1/2 minutes. Add the clams and water, cover and simmer until the clams open and are just cooked through, 5 to 8 minutes. Discard any clams that don't open.</li>
+                                <li>Add the spaghetti and the chopped parsley to the clams in the skillet and season with pepper. Toss over moderately high heat just until the spaghetti absorbs some of the juices, about 1 minute. Transfer the spaghetti and clams to shallow bowls and serve right away.</li>
+                            </ol>
                         </div>
 
                     </div>
+
                     <div className="col" id="ingredients-box">
-                    
-                        <img className="recipe-picture" src="http://alidaskitchen.com/wp-content/uploads/2012/06/IMG_2475-002-PM-001.jpg"></img>
+
+                        <img className="recipe-picture" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F201002-xl-spaghetti-clams-garlic.jpg%3Fitok%3DJ9rhLMhA&w=1600&q=70"></img>
                     </div>
 
                 </div>
@@ -118,4 +110,4 @@ class ChickenParm extends Component {
 }
 
 
-export default ChickenParm;
+export default SpaghettiClam;

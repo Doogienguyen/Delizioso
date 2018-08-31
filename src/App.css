@@ -12,57 +12,70 @@ nav{
    
 }
 
+.ingredients-header {
+    color: #86C1B7;
+}
+
+.btn-outline-success{
+  margin-left: 10px;
+  color: #86C1B7;
+
+}
+
+
 #ingredients-box{
     width: 500px;
 }
 
-#img-logo {
+/* #img-logo {
     width:500px;
     position: relative;
-    left: 3500px;
-}
+    left: 500px;
+} */
+
 .recipes{
    position: relative;
-   left: 300px; 
+   left: 400px; 
+   width: 700px;
+   margin-top: 10px;
 }
 .popRecipe{
-    width:253px;
-    height:203px;
+    width:303px;
+    height:253px;
     background-image: url("https://www.eatwell101.com/wp-content/uploads/2017/05/Cilantro-Lime-Shrimp-with-Zucchini-Noodles.jpg");
     background-size:cover;
 }
 .userRecipe{
-    width: 253px;
-    height: 203px;
+    width: 303px;;
+    height: 253px;
     margin-left: 30px;
-    background-image: url('https://tornadoughalli.com/wp-content/uploads/2018/02/Lemon-Chicken-Pasta-2.jpg');
+    background-image: url('http://images.media-allrecipes.com/userphotos/960x960/3758232.jpg');
     background-size: cover;
 }
 .healthyRecipe{
-    width:253px;
-    height:203px;
+    width:303px;;
+    height:253px;
     margin-top:30px;
     background-image: url('https://www.foodiecrush.com/wp-content/uploads/2017/09/Pesto-Pasta-Recipe-foodiecrush.com-002-768x1151.jpg');
     background-size:cover;
 }
 .dessertDay {
-    width:253px;
-    height:203px;
+    width:303px;;
+    height:253px;
     margin-left: 30px;
     margin-top: 30px;
-    background-image: url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F200911-xl-vanilla-and-cider-panna-cottas-with-spiced-ginger-cookies.jpg%3Fitok%3DBdtotzYz&w=800&q=85');
+    background-image: url('http://images.honestcooking.com/wp-content/uploads/2016/12/2401039199_3509e6ec5c_o1-635x501.jpg');
     background-size:cover;
 }
 
+/* users profile */
 .recipe-picture {
     height: 540px;
     width: 540px;
     
 }
 
-.ingredients-header {
-    color: #86C1B7;
-}
+
 
 /* User Profile */
 
@@ -84,11 +97,13 @@ body {
   .profile-userpic img {
     float: none;
     margin: 0 auto;
+    position:relative;
+    left:50px;
     width: 50%;
     height: 50%;
-    -webkit-border-radius: 50% !important;
-    -moz-border-radius: 50% !important;
-    border-radius: 50% !important;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    border-radius: 50% ;
   }
   
   .profile-usertitle {
@@ -173,5 +188,10 @@ body {
     background: #fff;
     min-height: 460px;
   }
-
+.row1{
+    width:700px;
+}
+.col1{
+    width:700px;
+}
   /* End */
