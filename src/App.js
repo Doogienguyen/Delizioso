@@ -9,9 +9,8 @@ import Header from './components/headeritems/header';
 import HeaderNav from './components/headeritems/headerNav';
 import userProfile from './components/userProfile';
 import HomePage from './components/homePage';
-
 import UserProfile from './components/userProfile';
-import {HOME,USERPROFILE} from './constants';
+import {HOME,USERPROFILE, LIMESHRIMP, CHICKENPARM, PESTOPASTA, LASAGNA} from './constants';
 
 import LimeShrimp from './components/recipes/limeShrimp';
 import PestoPasta from './components/recipes/pestoPasta';
@@ -67,7 +66,32 @@ class App extends Component {
             userName={this.state.users.userName}
             goodLogIn={this.state.goodLogIn}/>
         )
-        
+        case LIMESHRIMP: 
+        return (
+          <LimeShrimp
+            changePath={this.changePath}
+            userName={this.state.users.userName}
+            />
+        )
+        case CHICKENPARM: 
+        return (
+          <ChickenParm
+            changePath={this.changePath}
+            />
+          
+        )
+        case PESTOPASTA: 
+        return (
+          <PestoPasta
+            changePath={this.changePath}
+            />
+        )
+        case LASAGNA: 
+        return (
+          <Lasagna
+            changePath={this.changePath}
+            />
+        )
     }
   }
 
@@ -77,10 +101,10 @@ class App extends Component {
     return (
       <div className="container-fluid">
 
-      <LimeShrimp/>
+      {/* <LimeShrimp/>
       <PestoPasta/>
       <Lasagna/>
-      <ChickenParm/>
+      <ChickenParm/> */}
       
       <Header/>
          
@@ -97,13 +121,14 @@ class App extends Component {
         
           {this.renderPath(this.state.path)} 
         
-        <div className="col-md-6">
+        {/* <div className="col-md-6">
           <div className="recipes">
             <p>Recipes of the day:</p>
+            
             <div className="row">
 
 
-              {/* <PopRecipe
+              <PopRecipe
                 recipe={this.recipe} />
               <UserRecipe
                 recipe={this.recipe} />
@@ -112,10 +137,10 @@ class App extends Component {
               <HealthyRecipe
                 recipe={this.recipe} />
               <DessertDay
-                recipe={this.recipe} /> */}
+                recipe={this.recipe} />
             </div>
           </div>
-        </div> 
+        </div>  */}
 
 
       </div>
