@@ -20,6 +20,8 @@ import Cannolis from './components/recipes/cannolis';
 import SubmitRecip from './components/submitRecip'
 import UsersSubmit from './components/usersSubmit'
 import Data from './data';
+import Allrecipes from './components/allRecipes';
+import LemonGelato from './components/recipes/lemonGelato'
 
 // const HOME = 'HOME';
 // const USERPROFILE ="USERPROFILE";
@@ -213,6 +215,11 @@ class App extends Component {
       <div className="container">
         <Header />
 
+      {/* // <div className="container-fluid">
+
+      
+      // <Header/> */}
+         
         <HeaderNav
           resultRecipe={this.resultRecipe}
           recipes={this.state.recipes}
@@ -230,6 +237,24 @@ class App extends Component {
         {this.renderPath(this.state.path)}
 
       
+      {/* // <UserProfile/>
+
+      // <Allrecipes/> */}
+      {/* <LemonGelato/>
+      <Cannolis/>
+      <SpinachRavioli/>
+      <ProsciuttoPizza/>
+      <LemonChicken/>
+      <Risotto/>
+      <SpaghettiClam/>
+      <Tiramisu/>
+      <LimeShrimp/>
+      <PestoPasta/>
+      <Lasagna/>
+      <ChickenParm/> */}
+          {this.renderPath(this.state.path)} 
+        
+        
 
 
       </div>

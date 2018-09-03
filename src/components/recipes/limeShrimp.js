@@ -4,8 +4,11 @@ class LimeShrimp extends Component {
     
     render() {
         return (
+<<<<<<< HEAD
             <div className="container">
 
+=======
+>>>>>>> e67c6261cde56abdd59d9cbcb08e890825fd7fd7
                 <div className="row">
                     <div className="col" >
                         <h2 className="ingredients-header">Cilantro Lime Shrimp with Zucchini Noodles <button className="btn btn-danger btn-lg float-right" onClick={() => { this.props.addToFavorite(this.props.recipes[0]) }}><span >♥</span> </button></h2>
@@ -45,11 +48,6 @@ class LimeShrimp extends Component {
                     </div>
 
                 </div>
-
-
-
-            </div>
-
         )
     }
 }

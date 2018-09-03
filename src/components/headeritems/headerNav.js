@@ -5,9 +5,9 @@ class HeaderNav extends Component {
         userName: "",
         password: "",
         recipeInput: ""
-        
+
     }
-   
+
     onUserNameChange = e => {
         this.setState({
             userName: e.target.value
@@ -58,9 +58,9 @@ class HeaderNav extends Component {
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="btn-group">
                         <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            Login <span className="caret"></span>
+                            Login
                         </button>
-                        
+
                         <ul className="dropdown-menu">
 
                             <div className="form-group">
@@ -78,16 +78,16 @@ class HeaderNav extends Component {
                             <a className="dropdown-item" href="#">Forgot password?</a>
                         </ul>
                     </div>
-                    
+
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
-                            
+
                             <li className="nav-item active">
                             { this.props.goodLogIn && <button className="btn btn-link" onClick={() => {this.props.changePath(USERPROFILE)}} >Hello, {this.props.userName}</button>}
                                   
                             </li>
                             <li className="nav-item">
-                            <button className="btn btn-link" onClick={() => { this.props.changePath(HOME)}} >Home</button>
+                                <button className="btn btn-link" onClick={() => { this.props.changePath(HOME) }} >Home</button>
                             </li>
                             <li className="nav-item">
                             <button className="btn btn-link" onClick={() => {this.props.changePath(SUBMITRECIP)}}>Submit a Recipe</button>
@@ -95,27 +95,27 @@ class HeaderNav extends Component {
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Browse Recipes
-                            </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                     <a className="dropdown-item" href="#">All Recipes</a>
-                                    <a className="dropdown-item" onClick={() => { this.props.changePath(PESTOPASTA)}} >Low Calorie</a>
-                                    <a className="dropdown-item" href="#">Vegetarian</a>
-                                    <a className="dropdown-item" href="#">Pastas</a>
-                                    <a className="dropdown-item" href="#">Chicken</a>
-                                    <a className="dropdown-item" href="#">Desserts</a>
-                                    
-                                </div>
+                                        <a className="dropdown-item" href="#">All Recipes</a>
+                                        <a className="dropdown-item" onClick={() => { this.props.changePath(PESTOPASTA) }} >Low Calorie</a>
+                                        <a className="dropdown-item" href="#">Vegetarian</a>
+                                        <a className="dropdown-item" href="#">Pastas</a>
+                                        <a className="dropdown-item" href="#">Chicken</a>
+                                        <a className="dropdown-item" href="#">Desserts</a>
+
+                                    </div>
+                                </a>
                             </li>
                         </ul>
-                        <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-2" type="search" placeholder="Search"  value={this.state.recipeInput} onChange={this.onSearch}/>
-                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={this.searchRecipe}>Search</button>
-                        </form>
                     </div>
+                    <form className="form-inline my-2 my-lg-0">
+                        <input className="form-control mr-sm-2" type="search" placeholder="Search" value={this.state.recipeInput} onChange={this.onSearch} />
+                        <button className="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={this.searchRecipe}>Search</button>
+                    </form>
                 </nav>
-                
+
             </div>
-            
+
         )
     }
 

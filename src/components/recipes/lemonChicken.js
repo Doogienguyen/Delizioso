@@ -3,11 +3,18 @@ class LemonChicken extends Component {
 
     render() {
         return (
+<<<<<<< HEAD
             <div className="container">
                 
                 <div className="row">
                     <div className="col" >
                         <h2 className="ingredients-header">Lemon Chicken Pasta<button type="button" className="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+=======
+          
+                <div className="row">
+                    <div className="col" >
+                        <h2 class="ingredients-header">Lemon Chicken Pasta with Garlic Cream Sauce<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+>>>>>>> e67c6261cde56abdd59d9cbcb08e890825fd7fd7
                             Favorite </button></h2>
 
                         <div>
@@ -51,11 +58,6 @@ class LemonChicken extends Component {
                     </div>
 
                 </div>
-
-
-
-            </div>
-
         )
     }
 }

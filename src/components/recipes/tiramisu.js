@@ -3,8 +3,11 @@ class Tiramisu extends Component {
 
     render() {
         return (
+<<<<<<< HEAD
             <div className="container">
                 
+=======
+>>>>>>> e67c6261cde56abdd59d9cbcb08e890825fd7fd7
                 <div className="row">
                     <div className="col" >
                         <h2 className="ingredients-header">Tiramisu<button type="button" className="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -16,10 +19,10 @@ class Tiramisu extends Component {
                             Healthier Alternatives </button></h3>
                         <ul>
                             <h6>Cream</h6>
-                            <li>4  large egg yolks</li>
-                            <li>½  cup/100 grams granulated sugar, divided</li>
-                            <li>¾  cup heavy cream</li>
-                            <li>1  cup/227 grams mascarpone (8 ounces)</li>
+                            <li>4 large egg yolks</li>
+                            <li>½ cup/100 grams granulated sugar, divided</li>
+                            <li>¾ cup heavy cream</li>
+                            <li>1 cup/227 grams mascarpone (8 ounces)</li>
                         </ul> 
                         <ul>
                             <h6> Assembly</h6>
@@ -48,14 +51,13 @@ class Tiramisu extends Component {
 
                     <div className="col" id="ingredients-box">
 
-                        <img className="recipe-picture" src="http://images.honestcooking.com/wp-content/uploads/2016/12/2401039199_3509e6ec5c_o1-635x501.jpg"></img>
+                        <img className="recipe-picture" src="http://images.honestcooking.com/wp-content/uploads/2016/12/2401039199_3509e6ec5c_o1-635x501.jpg"/>
                     </div>
 
                 </div>
 
 
 
-            </div>
 
         )
     }
