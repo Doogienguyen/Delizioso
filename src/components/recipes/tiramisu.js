@@ -4,73 +4,15 @@ class Tiramisu extends Component {
     render() {
         return (
             <div className="container">
-                <div className="header">
-                    <h1 ><img src="./components/logo2.png" /></h1>
-                </div>
-
-                <div>
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <div className="btn-group">
-                            <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                Login <span className="caret"></span>
-                            </button>
-                            <ul className="dropdown-menu">
-
-                                <div className="form-group">
-                                    <input type="email" className="form-control" id="inputEmail1" placeholder="Email" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="password" className="form-control" id="inputPassword1" placeholder="Password" />
-                                </div>
-                                <div className="form-group">
-                                    <button type="submit" className="btn btn-default" onClick={() => console.log('click')} >Sign in</button>
-                                </div>
-
-                                <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="#">New around here? Sign up</a>
-                                <a className="dropdown-item" href="#">Forgot password?</a>
-                            </ul>
-                        </div>
-
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav mr-auto">
-                                <li className="nav-item active">
-                                    <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Sumbit a Recipe</a>
-                                </li>
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Browse Recipes
-                                    </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Low Calorie</a>
-                                        <a className="dropdown-item" href="#">Vegetarian</a>
-                                        <a className="dropdown-item" href="#">Pastas</a>
-                                        <a className="dropdown-item" href="#">Chicken</a>
-                                        <a className="dropdown-item" href="#">Desserts</a>
-                                        <div className="dropdown-divider"></div>
-                                        <a className="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <form className="form-inline my-2 my-lg-0">
-                                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </nav>
-                </div>
-
+                
                 <div className="row">
                     <div className="col" >
-                        <h2 class="ingredients-header">Tiramisu<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <h2 className="ingredients-header">Tiramisu<button type="button" className="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Favorite </button></h2>
 
                         <div>
                         Done correctly, a classic tiramisù can be transcendent. A creamy dessert of espresso-soaked ladyfingers surrounded by lightly sweetened whipped cream and a rich mascarpone, tiramisù relies heavily on the quality of its ingredients.</div>
-                        <h3 class="ingredients-header">Ingredients<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <h3 className="ingredients-header">Ingredients<button type="button" className="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Healthier Alternatives </button></h3>
                         <ul>
                             <h6>Cream</h6>
@@ -90,7 +32,7 @@ class Tiramisu extends Component {
                        
 
                         <div>
-                            <h3 class="ingredients-header">Directions</h3>
+                            <h3 className="ingredients-header">Directions</h3>
                             <ol>
                                 <li>Using an electric mixer in a medium bowl, whip together egg yolks and 1/4 cup/50 grams sugar until very pale yellow and about tripled in volume. A slight ribbon should fall from the beaters (or whisk attachment) when lifted from the bowl. Transfer mixture to a large bowl, wiping out the medium bowl used to whip the yolks and set aside.</li>
                                 <li>In the medium bowl, whip cream and remaining 1/4 cup/50 grams sugar until it creates soft-medium peaks. Add mascarpone and continue to whip until it creates a soft, spreadable mixture with medium peaks. Gently fold the mascarpone mixture into the sweetened egg yolks until combined.</li>

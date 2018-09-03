@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HOME, USERPROFILE, PESTOPASTA } from '../../constants';
+import { HOME, USERPROFILE, CANNOLIS, CHICKENPARM, LASAGNA, LEMONCHICKEN, LIMESHRIMP, PESTOPASTA, PROSCIUTTOPIZZA, RISOTTO, SPAGHETTICLAM, SPINACHRAVIOLI, TIRAMISU, SUBMITRECIP } from '../../constants';
 class HeaderNav extends Component {
     state = {
         userName: "",
@@ -36,17 +36,19 @@ class HeaderNav extends Component {
     
   searchRecipe = e => {
       e.preventDefault();
+    
     console.log(this.state.recipeInput);
     let item = this.props.recipes.filter(r => r.recipeName == this.state.recipeInput );
     let items = this.props.recipes.filter(r => r.keywords.indexOf(this.state.recipeInput) != -1);
     
-    var result = item.length > 0 ? item : items
+    var result = item.length > 0 ? item[0] : items[0]
 
     // var result = [...item, ...items];
     console.log(result);
     this.setState({
         recipeInput: ""
     })
+    this.props.resultRecipe(result);
   }
 
     render() {
@@ -81,14 +83,14 @@ class HeaderNav extends Component {
                         <ul className="navbar-nav mr-auto">
                             
                             <li className="nav-item active">
-                            <button className="btn btn-link">{ this.props.goodLogIn && <p>Hello, {this.props.userName}</p>}</button>
+                            { this.props.goodLogIn && <button className="btn btn-link" onClick={() => {this.props.changePath(USERPROFILE)}} >Hello, {this.props.userName}</button>}
                                   
                             </li>
                             <li className="nav-item">
                             <button className="btn btn-link" onClick={() => { this.props.changePath(HOME)}} >Home</button>
                             </li>
                             <li className="nav-item">
-                            <button className="btn btn-link" >Submit a Recipe</button>
+                            <button className="btn btn-link" onClick={() => {this.props.changePath(SUBMITRECIP)}}>Submit a Recipe</button>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

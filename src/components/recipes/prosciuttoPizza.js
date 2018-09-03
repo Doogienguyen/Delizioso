@@ -4,73 +4,14 @@ class ProsciuttoPizza extends Component {
     render() {
         return (
             <div className="container">
-                <div className="header">
-                    <h1 ><img src="./components/logo2.png" /></h1>
-                </div>
-
-                <div>
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <div className="btn-group">
-                            <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                Login <span className="caret"></span>
-                            </button>
-                            <ul className="dropdown-menu">
-
-                                <div className="form-group">
-                                    <input type="email" className="form-control" id="inputEmail1" placeholder="Email" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="password" className="form-control" id="inputPassword1" placeholder="Password" />
-                                </div>
-                                <div className="form-group">
-                                    <button type="submit" className="btn btn-default" onClick={() => console.log('click')} >Sign in</button>
-                                </div>
-
-                                <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="#">New around here? Sign up</a>
-                                <a className="dropdown-item" href="#">Forgot password?</a>
-                            </ul>
-                        </div>
-
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav mr-auto">
-                                <li className="nav-item active">
-                                    <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Sumbit a Recipe</a>
-                                </li>
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Browse Recipes
-                                    </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Low Calorie</a>
-                                        <a className="dropdown-item" href="#">Vegetarian</a>
-                                        <a className="dropdown-item" href="#">Pastas</a>
-                                        <a className="dropdown-item" href="#">Chicken</a>
-                                        <a className="dropdown-item" href="#">Desserts</a>
-                                        <div className="dropdown-divider"></div>
-                                        <a className="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <form className="form-inline my-2 my-lg-0">
-                                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </nav>
-                </div>
-
                 <div className="row">
                     <div className="col" >
-                        <h2 class="ingredients-header">Prosciutto and Arugala Pizza<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <h2 className="ingredients-header">Prosciutto and Arugala Pizza<button type="button" className="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Favorite </button></h2>
 
                         <div>
                         This supersimple dish is packed with garlic and a judicious amount of crushed red pepper topped off with clams for you to enjoy</div>
-                        <h3 class="ingredients-header">Ingredients</h3>
+                        <h3 className="ingredients-header">Ingredients</h3>
                         <ul>
                             <li>1 batch Thin Crust Pizza Dough</li>
                             <li>1 cup (8 fl. oz./250 ml) San Marzano Tomato Pizza Sauce</li>
@@ -83,7 +24,7 @@ class ProsciuttoPizza extends Component {
                         </ul>
 
                         <div>
-                            <h3 class="ingredients-header">Directions</h3>
+                            <h3 className="ingredients-header">Directions</h3>
                             <ol>
                                 <li>Preheat a Breville pizza maker on the preheat setting for 30 minutes.</li>
                                 <li>On a lightly floured surface, roll out half of the dough into a 10-inch (25-cm) round. Prick the dough all over with the tines of a fork. Transfer the dough to a floured pizza peel. Spread half of the pizza sauce over the dough, leaving a 1/2-inch (12-mm) border uncovered. Top with half of the cheese.</li>

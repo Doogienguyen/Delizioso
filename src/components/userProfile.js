@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {HOME, USERPROFILE } from '../constants'
-
+import UsersSubmit from './usersSubmit'
 
 class UserProfile extends Component {
     render () {
+        
         return(
     <div>
     <div className="container">
@@ -61,7 +62,9 @@ class UserProfile extends Component {
             </div>
             <div className="col-md-9">
                 <div className="profile-content">
-                    
+                <UsersSubmit 
+                usersSubmit={this.props.usersSubmit}
+                deleteRecipe={this.props.deleteRecipe}/>
                 </div>
             </div>
         </div>

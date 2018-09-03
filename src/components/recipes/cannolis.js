@@ -6,12 +6,12 @@ class Cannolis extends Component {
            
                 <div className="row">
                     <div className="col" >
-                        <h2 class="ingredients-header">5-Ingredient Cannolis<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <h2 className="ingredients-header">5-Ingredient Cannolis<button type="button" className="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Favorite </button></h2>
 
                         <div>
                         Homemade 5-Ingredient Cannolis are impressive and SO easy!</div>
-                        <h3 class="ingredients-header">Ingredients</h3>
+                        <h3 className="ingredients-header">Ingredients</h3>
                         <ul>
                             <li>8 cannoli shells, homemade or store bought will work</li>
                             <li>2 cups ricotta cheese</li>
@@ -21,7 +21,7 @@ class Cannolis extends Component {
                         </ul> 
                 
                         <div>
-                            <h3 class="ingredients-header">Directions</h3>
+                            <h3 className="ingredients-header">Directions</h3>
                             <ol>
                                 <li>Place the ricotta cheese into a fine mesh strainer and place it in the fridge to drain for at least 12 hours and up to 24 hours.</li>
                                 <li>When you're ready to make the filling:</li>
