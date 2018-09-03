@@ -31,7 +31,7 @@ class App extends Component {
   state = {
     recipes: Data,
     users: { 
-      userName: 'Tram', 
+      userName: 'Tram & Doug', 
       password: 'food' 
     },
     path: HOME,
@@ -111,19 +111,6 @@ class App extends Component {
     return (
       <div className="container-fluid">
 
-      {/* <Allrecipes/>
-      <LemonGelato/>
-      <Cannolis/>
-      <SpinachRavioli/>
-      <ProsciuttoPizza/>
-      <LemonChicken/>
-      <Risotto/>
-      <SpaghettiClam/>
-      <Tiramisu/>
-      <LimeShrimp/>
-      <PestoPasta/>
-      <Lasagna/>
-      <ChickenParm/> */}
       
       <Header/>
          
@@ -139,8 +126,10 @@ class App extends Component {
           login={this.login}
           onTermChange={this.handleTermChange}
         />
-      {/* <Allrecipes/>
-      <LemonGelato/>
+      <UserProfile/>
+
+      <Allrecipes/>
+      {/* <LemonGelato/>
       <Cannolis/>
       <SpinachRavioli/>
       <ProsciuttoPizza/>

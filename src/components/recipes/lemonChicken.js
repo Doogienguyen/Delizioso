@@ -6,7 +6,7 @@ class LemonChicken extends Component {
           
                 <div className="row">
                     <div className="col" >
-                        <h2 class="ingredients-header">Lemon Chicken Pasta<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <h2 class="ingredients-header">Lemon Chicken Pasta with Garlic Cream Sauce<button type="button" class="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                             Favorite </button></h2>
 
                         <div>
