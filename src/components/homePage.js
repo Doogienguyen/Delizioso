@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import {HOME,USERPROFILE, LIMESHRIMP, CHICKENPARM, PESTOPASTA, LASAGNA, TIRAMISU, SPINACHRAVIOLI} from '../constants';
+import { HOME, USERPROFILE, LIMESHRIMP, CHICKENPARM, PESTOPASTA, LASAGNA, TIRAMISU, SPINACHRAVIOLI } from '../constants';
 
 
 class HomePage extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                
+
                 <div className="container">
                     <div className="recipes">
                         <p>Recipes of the day:</p>
@@ -24,13 +24,13 @@ class HomePage extends Component {
                                 <div className='recipedesc'> <p className="recipeheader" >Spinach Ravioli with Zucchini Ribbons</p>
                                     <p>Combine gorgeous long ribbons of zucchini with spinach-and-cheese-stuffed ravioli and a light cream sauce ... <button className="btn btn-link" onClick={() => { this.props.changePath(SPINACHRAVIOLI) }} >click to read more</button></p></div>
                             </div>
-                        <div className="col1">
-                            <div id="row1" className="row">
-                                <div className="healthyRecipe">Healthy</div>
-                                <div className="dessertDay">Dessert</div>
+                            <div className="col1">
+                                <div id="row1" className="row">
+                                    <div className="healthyRecipe">Healthy</div>
+                                    <div className="dessertDay">Dessert</div>
+                                </div>
                             </div>
-                        </div>
-                            
+
                         </div>
                         <div id="row1" className="col1">
                             <div className="row">
@@ -43,7 +43,7 @@ class HomePage extends Component {
                     </div>
                 </div>
             </div>
-        
+
         )
     }
 

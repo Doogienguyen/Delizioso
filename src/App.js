@@ -5,7 +5,7 @@ import HeaderNav from './components/headeritems/headerNav';
 import userProfile from './components/userProfile';
 import HomePage from './components/homePage';
 import UserProfile from './components/userProfile';
-import { HOME, USERPROFILE, CANNOLIS, CHICKENPARM, LASAGNA, LEMONCHICKEN, LIMESHRIMP, PESTOPASTA, PROSCIUTTOPIZZA, RISOTTO, SPAGHETTICLAM, SPINACHRAVIOLI, TIRAMISU, SUBMITRECIP, ALLRECIPES} from './constants';
+import { HOME, USERPROFILE, CANNOLIS, CHICKENPARM, LASAGNA, LEMONCHICKEN, LIMESHRIMP, PESTOPASTA, PROSCIUTTOPIZZA, RISOTTO, SPAGHETTICLAM, SPINACHRAVIOLI, TIRAMISU, SUBMITRECIP, ALLRECIPES } from './constants';
 import LimeShrimp from './components/recipes/limeShrimp';
 import PestoPasta from './components/recipes/pestoPasta';
 import Lasagna from './components/recipes/lasagna';
@@ -48,13 +48,13 @@ class App extends Component {
     console.log(this.state.favorites);
   }
 
-  addToUsersSubmit= usersSubmit => {
-  let newUsersSubmit = [...this.state.usersSubmit,usersSubmit];
-  this.setState({
-    usersSubmit: newUsersSubmit
-  })
+  addToUsersSubmit = usersSubmit => {
+    let newUsersSubmit = [...this.state.usersSubmit, usersSubmit];
+    this.setState({
+      usersSubmit: newUsersSubmit
+    })
 
-}
+  }
   deleteRecipe = recipe => {
     let newUsersSubmit = [
       ...this.state.usersSubmit.slice(0, recipe),
@@ -91,34 +91,34 @@ class App extends Component {
       case HOME:
         return (
           <HomePage
-          changePath={this.changePath}
+            changePath={this.changePath}
             addToFavorite={this.addToFavorite}
             login={this.login}
             username={this.state.userName}
             password={this.state.password}
-            
+
           />
 
         )
       case USERPROFILE:
         return (
           <div>
-          <UserProfile
-            recipe={this.state.recipes}
-            deleteRecipe={this.deleteRecipe}
-            favorites={this.state.favorites}
-            changePath={this.changePath}
-            userName={this.state.users.userName}
-            goodLogIn={this.state.goodLogIn}
-            usersSubmit={this.state.usersSubmit}
-            
-          />
-          {/* <UsersSubmit 
+            <UserProfile
+              recipe={this.state.recipes}
+              deleteRecipe={this.deleteRecipe}
+              favorites={this.state.favorites}
+              changePath={this.changePath}
+              userName={this.state.users.userName}
+              goodLogIn={this.state.goodLogIn}
+              usersSubmit={this.state.usersSubmit}
+
+            />
+            {/* <UsersSubmit 
           deleteRecipe={this.deleteRecipe}/> */}
           </div>
         )
-        case SUBMITRECIP:
-        return(
+      case SUBMITRECIP:
+        return (
           <SubmitRecip
             deleteRecipe={this.deleteRecipe}
             // usersSubmit={this.usersSubmit}
@@ -126,16 +126,16 @@ class App extends Component {
             addToUsersSubmit={this.addToUsersSubmit}
             usersSubmit={this.state.usersSubmit}
           />
-          
-        )   
+
+        )
       case CANNOLIS:
-        return(
+        return (
           <Cannolis
             changePath={this.changePath}
             addToFavorite={this.addToFavorite}
           />
         )
-        case CHICKENPARM:
+      case CHICKENPARM:
         return (
           <ChickenParm
             changePath={this.changePath}
@@ -143,15 +143,15 @@ class App extends Component {
           />
 
         )
-        case LASAGNA:
+      case LASAGNA:
         return (
           <Lasagna
             changePath={this.changePath}
             addToFavorite={this.addToFavorite}
           />
         )
-        case LEMONCHICKEN:
-        return(
+      case LEMONCHICKEN:
+        return (
           <LemonChicken
             changePath={this.changePath}
             addToFavorite={this.addToFavorite}
@@ -164,7 +164,7 @@ class App extends Component {
             addToFavorite={this.addToFavorite}
           />
         )
-      
+
       case PESTOPASTA:
         return (
           <PestoPasta
@@ -172,42 +172,42 @@ class App extends Component {
             addToFavorite={this.addToFavorite}
           />
         )
-        case PROSCIUTTOPIZZA:
-        return(
+      case PROSCIUTTOPIZZA:
+        return (
           <Cannolis
             changePath={this.changePath}
             addToFavorite={this.addToFavorite}
           />
         )
-        case RISOTTO:
-        return(
+      case RISOTTO:
+        return (
           <Risotto
             changePath={this.changePath}
             addToFavorite={this.addToFavorite}
           />
         )
-        case SPAGHETTICLAM:
-        return(
+      case SPAGHETTICLAM:
+        return (
           <SpaghettiClam
             changePath={this.changePath}
             addToFavorite={this.addToFavorite}
           />
         )
-        case SPINACHRAVIOLI:
+      case SPINACHRAVIOLI:
         return (
           <SpinachRavioli
             changePath={this.changePath}
             addToFavorite={this.addToFavorite}
           />
         )
-        case TIRAMISU:
+      case TIRAMISU:
         return (
           <Tiramisu
             changePath={this.changePath}
             addToFavorite={this.addToFavorite}
           />
         )
-        case ALLRECIPES:
+      case ALLRECIPES:
         return (
           < AllRecipes
             changePath={this.changePath}
@@ -222,11 +222,11 @@ class App extends Component {
       <div className="container">
         <Header />
 
-      {/* // <div className="container-fluid">
+        {/* // <div className="container-fluid">
 
       
       // <Header/> */}
-         
+
         <HeaderNav
           resultRecipe={this.resultRecipe}
           recipes={this.state.recipes}
@@ -243,11 +243,11 @@ class App extends Component {
 
         {this.renderPath(this.state.path)}
 
-      
-      {/* <UserProfile/> */}
 
-      {/*<Allrecipes/> */}
-      {/* <LemonGelato/>
+        {/* <UserProfile/> */}
+
+        {/*<Allrecipes/> */}
+        {/* <LemonGelato/>
       <Cannolis/>
       <SpinachRavioli/>
       <ProsciuttoPizza/>
@@ -259,9 +259,9 @@ class App extends Component {
       <PestoPasta/>
       <Lasagna/>
       <ChickenParm/> */}
-          
-        
-        
+
+
+
 
 
       </div>

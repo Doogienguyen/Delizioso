@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { HOME, USERPROFILE, CANNOLIS, CHICKENPARM, LASAGNA, LEMONCHICKEN, LIMESHRIMP, PESTOPASTA, PROSCIUTTOPIZZA, 
-    RISOTTO, SPAGHETTICLAM, SPINACHRAVIOLI, TIRAMISU, SUBMITRECIP, ALLRECIPES } from '../../constants';
+import {
+    HOME, USERPROFILE, CANNOLIS, CHICKENPARM, LASAGNA, LEMONCHICKEN, LIMESHRIMP, PESTOPASTA, PROSCIUTTOPIZZA,
+    RISOTTO, SPAGHETTICLAM, SPINACHRAVIOLI, TIRAMISU, SUBMITRECIP, ALLRECIPES
+} from '../../constants';
 
 class HeaderNav extends Component {
     state = {
@@ -35,23 +37,23 @@ class HeaderNav extends Component {
             recipeInput: e.target.value
         })
     }
-    
-  searchRecipe = e => {
-      e.preventDefault();
-    
-    console.log(this.state.recipeInput);
-    let item = this.props.recipes.filter(r => r.recipeName == this.state.recipeInput );
-    let items = this.props.recipes.filter(r => r.keywords.indexOf(this.state.recipeInput) != -1);
-    
-    var result = item.length > 0 ? item[0] : items[0]
 
-    // var result = [...item, ...items];
-    console.log(result);
-    this.setState({
-        recipeInput: ""
-    })
-    this.props.resultRecipe(result);
-  }
+    searchRecipe = e => {
+        e.preventDefault();
+
+        console.log(this.state.recipeInput);
+        let item = this.props.recipes.filter(r => r.recipeName == this.state.recipeInput);
+        let items = this.props.recipes.filter(r => r.keywords.indexOf(this.state.recipeInput) != -1);
+
+        var result = item.length > 0 ? item[0] : items[0]
+
+        // var result = [...item, ...items];
+        console.log(result);
+        this.setState({
+            recipeInput: ""
+        })
+        this.props.resultRecipe(result);
+    }
 
     render() {
         return (
@@ -76,67 +78,27 @@ class HeaderNav extends Component {
                             </div>
 
                             <div className="dropdown-divider"></div>
-                            <a className="dropdown-item" data-toggle="modal" data-target="#myModal">New around here? Sign up</a>
+                            <a className="dropdown-item" >New around here? Sign up</a>
                             <a className="dropdown-item" href="#">Forgot password?</a>
                         </ul>
                     </div>
-
-                    <div id="myModal" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
-
-
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Join Delizioso!</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div >
-                                    <input classname="form-control mr-sm-2" placeholder="User Name" /> </div>
-                                    <div> Password
-                                    <input placeholder="Password" /></div>
-                                    
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
 
                             <li className="nav-item active">
-                            { this.props.goodLogIn && <button className="btn btn-link" onClick={() => {this.props.changePath(USERPROFILE)}} >Hello, {this.props.userName}</button>}
-                                  
+                                {this.props.goodLogIn && <button className="btn btn-link" onClick={() => { this.props.changePath(USERPROFILE) }} >Hello, {this.props.userName}</button>}
+
                             </li>
                             <li className="nav-item">
                                 <button className="btn btn-link" onClick={() => { this.props.changePath(HOME) }} >Home</button>
                             </li>
                             <li className="nav-item">
-                            <button className="btn btn-link" onClick={() => {this.props.changePath(SUBMITRECIP)}}>Submit a Recipe</button>
+                                <button className="btn btn-link" onClick={() => { this.props.changePath(SUBMITRECIP) }}>Submit a Recipe</button>
                             </li>
                             <li className="nav-item">
-                            <button className="btn btn-link" onClick={() => {this.props.changePath(ALLRECIPES)}}>Browse all Recipes</button>
+                                <button className="btn btn-link" onClick={() => { this.props.changePath(ALLRECIPES) }}>Browse all Recipes</button>
                             </li>
-                            {/* <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Browse Recipes
-                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">All Recipes</a>
-                                        <a className="dropdown-item" onClick={() => { this.props.changePath(HOME) }} >Low Calorie</a>
-                                        <a className="dropdown-item" href="#">Vegetarian</a>
-                                        <a className="dropdown-item" href="#">Pastas</a>
-                                        <a className="dropdown-item" href="#">Chicken</a>
-                                        <a className="dropdown-item" href="#">Desserts</a>
-                                 </div>
-                                </a>
-                            </li> */}
+
                         </ul>
                     </div>
                     <form className="form-inline my-2 my-lg-0">
