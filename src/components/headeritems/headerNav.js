@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { HOME, USERPROFILE, CANNOLIS, CHICKENPARM, LASAGNA, LEMONCHICKEN, LIMESHRIMP, PESTOPASTA, PROSCIUTTOPIZZA, RISOTTO, SPAGHETTICLAM, SPINACHRAVIOLI, TIRAMISU, SUBMITRECIP } from '../../constants';
+import { HOME, USERPROFILE, CANNOLIS, CHICKENPARM, LASAGNA, LEMONCHICKEN, LIMESHRIMP, PESTOPASTA, PROSCIUTTOPIZZA, 
+    RISOTTO, SPAGHETTICLAM, SPINACHRAVIOLI, TIRAMISU, SUBMITRECIP, ALLRECIPES } from '../../constants';
+
 class HeaderNav extends Component {
     state = {
         userName: "",
@@ -92,20 +94,22 @@ class HeaderNav extends Component {
                             <li className="nav-item">
                             <button className="btn btn-link" onClick={() => {this.props.changePath(SUBMITRECIP)}}>Submit a Recipe</button>
                             </li>
-                            <li className="nav-item dropdown">
+                            <li className="nav-item">
+                            <button className="btn btn-link" onClick={() => {this.props.changePath(ALLRECIPES)}}>Browse all Recipes</button>
+                            </li>
+                            {/* <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Browse Recipes
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a className="dropdown-item" href="#">All Recipes</a>
-                                        <a className="dropdown-item" onClick={() => { this.props.changePath(PESTOPASTA) }} >Low Calorie</a>
+                                        <a className="dropdown-item" onClick={() => { this.props.changePath(HOME) }} >Low Calorie</a>
                                         <a className="dropdown-item" href="#">Vegetarian</a>
                                         <a className="dropdown-item" href="#">Pastas</a>
                                         <a className="dropdown-item" href="#">Chicken</a>
                                         <a className="dropdown-item" href="#">Desserts</a>
-
-                                    </div>
+                                 </div>
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                     <form className="form-inline my-2 my-lg-0">

@@ -3,10 +3,6 @@ class Risotto extends Component {
 
     render() {
         return (
-<<<<<<< HEAD
-            <div className="container">
-=======
->>>>>>> e67c6261cde56abdd59d9cbcb08e890825fd7fd7
                 <div className="row">
                     <div className="col" >
                         <h2 className="ingredients-header">Mushroom Risotto<button type="button" className="btn btn-outline-success btn-sm toggle" data-toggle="button" aria-pressed="false" autocomplete="off">

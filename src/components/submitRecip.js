@@ -5,7 +5,7 @@ import UsersSubmit from './usersSubmit'
 class SubmitRecip extends Component {
     state = {
         recipName: "",
-        ingredients: "",
+        ingredient: "",
         description:"",
         directions: "",
         url: ""
@@ -43,6 +43,7 @@ class SubmitRecip extends Component {
             recipName: "",
             ingredients: "",
             description: "",
+            directions: "",
             url:""
         });
         console.log(this.state.ingredients);

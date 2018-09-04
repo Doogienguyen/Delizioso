@@ -5,7 +5,7 @@ import HeaderNav from './components/headeritems/headerNav';
 import userProfile from './components/userProfile';
 import HomePage from './components/homePage';
 import UserProfile from './components/userProfile';
-import { HOME, USERPROFILE, CANNOLIS, CHICKENPARM, LASAGNA, LEMONCHICKEN, LIMESHRIMP, PESTOPASTA, PROSCIUTTOPIZZA, RISOTTO, SPAGHETTICLAM, SPINACHRAVIOLI, TIRAMISU, SUBMITRECIP} from './constants';
+import { HOME, USERPROFILE, CANNOLIS, CHICKENPARM, LASAGNA, LEMONCHICKEN, LIMESHRIMP, PESTOPASTA, PROSCIUTTOPIZZA, RISOTTO, SPAGHETTICLAM, SPINACHRAVIOLI, TIRAMISU, SUBMITRECIP, ALLRECIPES} from './constants';
 import LimeShrimp from './components/recipes/limeShrimp';
 import PestoPasta from './components/recipes/pestoPasta';
 import Lasagna from './components/recipes/lasagna';
@@ -20,8 +20,8 @@ import Cannolis from './components/recipes/cannolis';
 import SubmitRecip from './components/submitRecip'
 import UsersSubmit from './components/usersSubmit'
 import Data from './data';
-import Allrecipes from './components/allRecipes';
 import LemonGelato from './components/recipes/lemonGelato'
+import AllRecipes from './components/recipes/allRecipes';
 
 // const HOME = 'HOME';
 // const USERPROFILE ="USERPROFILE";
@@ -32,7 +32,7 @@ class App extends Component {
   state = {
     recipes: Data,
     users: {
-      userName: 'T',
+      userName: 'Tram & Doug',
       password: 'food'
     },
     path: HOME,
@@ -91,11 +91,12 @@ class App extends Component {
       case HOME:
         return (
           <HomePage
+          changePath={this.changePath}
             addToFavorite={this.addToFavorite}
             login={this.login}
             username={this.state.userName}
             password={this.state.password}
-            changePath={this.changePath}
+            
           />
 
         )
@@ -120,7 +121,7 @@ class App extends Component {
         return(
           <SubmitRecip
             deleteRecipe={this.deleteRecipe}
-            usersSubmit={this.usersSubmit}
+            // usersSubmit={this.usersSubmit}
             changePath={this.changePath}
             addToUsersSubmit={this.addToUsersSubmit}
             usersSubmit={this.state.usersSubmit}
@@ -206,7 +207,13 @@ class App extends Component {
             addToFavorite={this.addToFavorite}
           />
         )
-        
+        case ALLRECIPES:
+        return (
+          < AllRecipes
+            changePath={this.changePath}
+            addToFavorite={this.addToFavorite}
+          />
+        )
 
     }
   }
@@ -237,9 +244,9 @@ class App extends Component {
         {this.renderPath(this.state.path)}
 
       
-      {/* // <UserProfile/>
+      {/* <UserProfile/> */}
 
-      // <Allrecipes/> */}
+      {/*<Allrecipes/> */}
       {/* <LemonGelato/>
       <Cannolis/>
       <SpinachRavioli/>
@@ -252,7 +259,7 @@ class App extends Component {
       <PestoPasta/>
       <Lasagna/>
       <ChickenParm/> */}
-          {this.renderPath(this.state.path)} 
+          
         
         
 

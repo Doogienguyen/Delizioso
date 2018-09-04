@@ -3,11 +3,7 @@ class ChickenParm extends Component {
 
     render() {
         return (
-<<<<<<< HEAD
             <div className="container">
-=======
-        
->>>>>>> e67c6261cde56abdd59d9cbcb08e890825fd7fd7
                 <div className="row">
                     <div className="col" >
                     <h2 class="ingredients-header">Chicken Parmesan<button type="button" className="btn btn-outline-success btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -52,7 +48,7 @@ class ChickenParm extends Component {
                         <img className="recipe-picture" src="http://alidaskitchen.com/wp-content/uploads/2012/06/IMG_2475-002-PM-001.jpg"></img>
                     </div>
 
-                </div>
+                </div></div>
         )
     }
 }

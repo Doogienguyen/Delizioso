@@ -6,30 +6,7 @@ import { array, func } from 'prop-types';
 const UsersSubmit = props => {
     return (
         <div className="col-md-6">
-        {/* <table className="table">
-            <thead>
-                
-            </thead>
-            <tbody>
-                {props.usersSubmit.map((account, index) => {
-                    return (
-                        <React.Fragment key={index}>
-                            <tr id="first-list">
-                                <td>{account.recipName} </td>
-                            </tr>
-                            <tr id='second-list'>
-                                <td>{account.ingredients}</td>
-                            </tr>
-                            <tr id="third-list">
-                                <td>{account.description}</td>
-                                <td><button className="btn btn-danger" onClick={() => { props.deleteRecipe(index) }} >x</button></td>
-                            </tr>
-                            
-                        </React.Fragment>
-                    )
-                })}
-            </tbody>
-        </table> */}
+        
         {props.usersSubmit.map((account, index) => {
             return(
                 <div ic="submitted" className="container" key={index}>

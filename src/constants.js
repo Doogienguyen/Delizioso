@@ -12,3 +12,4 @@ export const SPAGHETTICLAM = 'spaghetti clam';
 export const SPINACHRAVIOLI = 'spinach ravioli';
 export const TIRAMISU = 'tiramisu';
 export const SUBMITRECIP = 'submitRecip';
+export const ALLRECIPES = 'allRecipes';
