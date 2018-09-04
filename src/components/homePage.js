@@ -13,7 +13,7 @@ class HomePage extends Component {
                         <div className="col1">
                             <div id="row1" className="row">
                                 <div className="popRecipe">Popular</div>
-                                <div className="userRecipe"> </div>
+                                <div className="userRecipe">Users Submitted</div>
 
                             </div>
                         </div>
@@ -26,8 +26,8 @@ class HomePage extends Component {
                             </div>
                         <div className="col1">
                             <div id="row1" className="row">
-                                <div className="healthyRecipe"></div>
-                                <div className="dessertDay"></div>
+                                <div className="healthyRecipe">Healthy</div>
+                                <div className="dessertDay">Dessert</div>
                             </div>
                         </div>
                             

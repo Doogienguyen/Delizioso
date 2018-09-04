@@ -64,7 +64,7 @@ class SubmitRecip extends Component {
                 </div>
                 <div className="form-group">
                     <label>Ingredients</label>
-                    <textarea className="form-control" rows="5" value={this.state.ingredients} onChange={this.onIngredientsChange} type="text" placeholder="Please enter each ingredient item on a new line"></textarea>
+                    <textarea className="form-control" rows="5" value={this.state.ingredients} onChange={this.onIngredientsChange} type="text" placeholder="Ex: milk, sugar, flour..."></textarea>
                 </div>
                 <div className="form-group">
                     <label>Description</label>

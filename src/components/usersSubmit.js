@@ -18,15 +18,13 @@ const UsersSubmit = props => {
                             {account.description}</div>
                             
                         <h3 class="ingredients-header">Ingredients</h3>
-                        <ul></ul>
                         {account.ingredients}
 
                         
                         <div>
                             <h3 className="ingredients-header">Directions</h3>
-                            <ol>
-                                <li>{account.directions}</li>
-                            </ol>
+                             {account.directions}
+                            
                         </div>
                         </div>
 

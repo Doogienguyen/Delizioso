@@ -76,10 +76,37 @@ class HeaderNav extends Component {
                             </div>
 
                             <div className="dropdown-divider"></div>
-                            <a className="dropdown-item" href="#">New around here? Sign up</a>
+                            <a className="dropdown-item" data-toggle="modal" data-target="#myModal">New around here? Sign up</a>
                             <a className="dropdown-item" href="#">Forgot password?</a>
                         </ul>
                     </div>
+
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Join Delizioso!</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div >
+                                    <input classname="form-control mr-sm-2" placeholder="User Name" /> </div>
+                                    <div> Password
+                                    <input placeholder="Password" /></div>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
